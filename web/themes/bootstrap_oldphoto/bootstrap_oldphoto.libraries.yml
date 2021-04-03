@@ -1,7 +1,12 @@
 global-styling:
   version: 1.x
+  fonts:
+    css:
+      theme:
+        //fonts.googleapis.com/css?family=Lato&display=swap: {type: external}
   css:
     theme:
       assets/css/style.css: {}
+      css/style.css: {}
   js:
     assets/js/global.js: {}

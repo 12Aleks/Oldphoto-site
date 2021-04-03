@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="359d7cf9-ea80-4fec-9c5c-435be1146255" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/block/block--bootstrap-for-drupal-breadcrumbs.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/block/block--local-tasks-block.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/block/block.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/includes/aside-content.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/includes/footer.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/includes/header.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/page/frontpage/node--view--frontpage.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/page/frontpage/page--front.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/page/frontpage/views-view-unformatted--frontpage.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/composerJson.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/_global.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sites/development.services.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web/sites/development.services.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/bootstrap_oldphoto.libraries.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/bootstrap_oldphoto.libraries.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,6 +88,7 @@
   </component>
   <component name="ProjectId" id="1qeRftLsptLoltBsZzkSE6sWNX7" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/sites/default" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -101,6 +97,7 @@
     <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.stylelint" value="" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -110,6 +107,7 @@
       <recent name="D:\project\oldphoto\xampp\htdocs\www-oldphoto\web\themes" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project\oldphoto\xampp\htdocs\www-oldphoto\web\themes\bootstrap_oldphoto\css" />
       <recent name="D:\project\oldphoto\xampp\htdocs\www-oldphoto\web\themes\bootstrap_oldphoto\templates\page" />
       <recent name="D:\project\oldphoto\xampp\htdocs\www-oldphoto\web\themes\bootstrap_oldphoto" />
     </key>
@@ -137,7 +135,7 @@
       <option name="presentableId" value="Default" />
       <updated>1617438175552</updated>
       <workItem from="1617438177444" duration="675000" />
-      <workItem from="1617453388749" duration="1345000" />
+      <workItem from="1617453388749" duration="2939000" />
     </task>
     <servers />
   </component>

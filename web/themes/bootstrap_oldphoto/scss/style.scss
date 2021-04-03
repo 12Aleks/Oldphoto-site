@@ -1,0 +1,16 @@
+/**
+ * @file
+ * Subtheme specific SCSS.
+ */
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+//global class
+@import 'global';
+html, body {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
