@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="359d7cf9-ea80-4fec-9c5c-435be1146255" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/README_SUBTHEME.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/alert-circle-fill.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/arrow-left-circle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/arrow-right-circle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/arrow-up-circle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/book.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/bookmark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/clock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/comment-fill.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/comment.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/corner-down-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/default.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/eye-fill.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/file-plus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/file-text.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/file.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/image.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/info-fill.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/key.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/language.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/link.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/login.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/logo-drupal.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/logout.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/map-pin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/phone-alt-solid.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/plus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/printer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/reply.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/send-1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/send.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/social-media-round/facebook.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/social-media-round/instagram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/social-media-round/linkedin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/social-media-round/messenger.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/social-media-round/reddit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/social-media-round/skype.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/social-media-round/snapchat.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/social-media-round/twitter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/social-media-round/whatsapp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/social-media-round/youtube.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/star.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/tag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/unlock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/user.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/x-circle-fill.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/icon/x.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/image/arrow-corner-right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/image/flags/Brazil.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/image/flags/France.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/image/flags/Germany.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/image/flags/Italy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/image/flags/Netherlands.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/image/flags/Portugal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/image/flags/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/image/flags/Russia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/image/flags/Spain.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/image/flags/United-Kingdom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/image/forum-icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/image/forum-topics-icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/js/global.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/scss/base/_base.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/scss/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/scss/tools/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/scss/tools/_subtheme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/scss/tools/_variable.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/assets/scss/vendor/_bootstrap.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/bootstrap_oldphoto.info.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/bootstrap_oldphoto.libraries.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/bootstrap_oldphoto.theme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/gulpfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/logo.svg" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-diactoros" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-escaper" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-feed" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-stdlib" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-zendframework-bridge" />
+      <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/drupal/core-composer-scaffold" />
+      <path value="$PROJECT_DIR$/vendor/drupal/core-project-message" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/masterminds/html5" />
+      <path value="$PROJECT_DIR$/vendor/pear/archive_tar" />
+      <path value="$PROJECT_DIR$/vendor/pear/console_getopt" />
+      <path value="$PROJECT_DIR$/vendor/pear/pear-core-minimal" />
+      <path value="$PROJECT_DIR$/vendor/pear/pear_exception" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/stack/builder" />
+      <path value="$PROJECT_DIR$/vendor/symfony-cmf/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/serializer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/reflection" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/vendor/typo3/phar-stream-wrapper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1qeRftLsptLoltBsZzkSE6sWNX7" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/themes" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.stylelint" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\oldphoto\xampp\htdocs\www-oldphoto\web\themes" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="359d7cf9-ea80-4fec-9c5c-435be1146255" name="Default Changelist" comment="" />
+      <created>1617438175552</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617438175552</updated>
+      <workItem from="1617438177444" duration="427000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
