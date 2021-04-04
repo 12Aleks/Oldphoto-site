@@ -1,0 +1,80 @@
+.home-page-banner {
+  position: relative;
+  width: 100%;
+  height: 95vh;
+  padding: 15rem 0;
+  //background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 10%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("./images/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    height: auto;
+
+  }
+
+  h1 {
+    font: 700 3.5vw/2.5rem 'IBM Plex Serif', serif;
+    letter-spacing: 0.5rem;
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      color: rgba(255,255,255,0.5);
+    }
+    @media (min-width: 768px) {
+      line-height: 4rem;
+    }
+    @media (min-width: 992px) {
+      line-height: 6.5rem;
+      letter-spacing: 0.8rem;
+    }
+    @media(max-width: 767.98px) {
+      font: 700 7.5vw/3.5rem 'IBM Plex Serif', serif;
+    }
+  }
+
+  h2 {
+    max-width: 20rem;
+    font: 600 2vw 'IBM Plex Serif', serif;
+    @media (min-width: 992px) {
+      max-width: 30rem;
+      font: 2vw 'IBM Plex Serif', serif;
+    }
+    @media(max-width: 767.98px) {
+      font: 2.5vw 'IBM Plex Serif', serif;
+    }
+    @media(max-width: 575.98px) {
+      font: 3.1vw 'IBM Plex Serif', serif;
+    }
+  }
+
+
+  .btn {
+    -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+    padding: 1.25rem 2rem;
+    font: 100 0.80vw 'IBM Plex Serif', serif;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    border: 0;
+  }
+
+  .btn-primary {
+    background-color: #781c2e;
+    color: white;
+
+    &:hover {
+      background-color: #601625;
+    }
+
+    &:focus {
+      background-color: #601625;
+      color: white;
+    }
+
+    &:active {
+      background-color: #3d151a !important;
+    }
+  }
+}

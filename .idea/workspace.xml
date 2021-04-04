@@ -2,14 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="359d7cf9-ea80-4fec-9c5c-435be1146255" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/composerJson.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/_global.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylelintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/block/_block_bannerhomepage.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/includes/_header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/block/block--bannerhomepage.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/layout/html.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/layout/page.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/bootstrap_oldphoto.libraries.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/bootstrap_oldphoto.libraries.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/include_paths.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/include_paths.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/bootstrap_oldphoto.info.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/bootstrap_oldphoto.info.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/css/style.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/_global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/includes/header.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/includes/header.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/page/frontpage/page--front.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/page/frontpage/page--front.html.twig" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,9 +33,14 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="composer.json" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -87,22 +108,28 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1qeRftLsptLoltBsZzkSE6sWNX7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/sites/default" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/css" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.stylelint" value="" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="node.js.selected.package.stylelint" value="D:\project\oldphoto\xampp\htdocs\www-oldphoto\web\themes\bootstrap_oldphoto\css" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\project\oldphoto\xampp\htdocs\www-oldphoto\web\sites\default" />
       <recent name="D:\project\oldphoto\xampp\htdocs\www-oldphoto\web\themes\bootstrap_oldphoto\templates" />
+      <recent name="D:\project\oldphoto\xampp\htdocs\www-oldphoto\web\sites\default" />
       <recent name="D:\project\oldphoto\xampp\htdocs\www-oldphoto\web\themes\bfd\templates\page" />
       <recent name="D:\project\oldphoto\xampp\htdocs\www-oldphoto\web\themes" />
     </key>
@@ -112,18 +139,7 @@
       <recent name="D:\project\oldphoto\xampp\htdocs\www-oldphoto\web\themes\bootstrap_oldphoto" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -135,24 +151,31 @@
       <option name="presentableId" value="Default" />
       <updated>1617438175552</updated>
       <workItem from="1617438177444" duration="675000" />
-      <workItem from="1617453388749" duration="2939000" />
+      <workItem from="1617453388749" duration="7591000" />
+      <workItem from="1617473956107" duration="899000" />
+      <workItem from="1617518531289" duration="609000" />
+      <workItem from="1617529104176" duration="3663000" />
+      <workItem from="1617532844903" duration="8812000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -1,0 +1,9 @@
+.navigation.menu--main{
+  .nav-item.nav-link.is-active{
+    &:before{
+      content: none !important;
+
+    }
+  }
+}
+

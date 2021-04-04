@@ -44,7 +44,7 @@
 #}
 
 <!-- HEADER-->
-{% include '@bootstrap_for_drupal/includes/header.html.twig' %}
+{% include '@bootstrap_oldphoto/includes/header.html.twig' %}
 <!-- HEADER-->
 
 <!-- MAIN -->
@@ -61,14 +61,20 @@
               {{ page.content_before }}
             </aside>
           {% endif %}
+      </div>
+    </div>
+  </div>
           <!-- CONTENT BEFORE -->
 
           <!-- MAIN CONTENT -->
-          <section class="py-2 py-md-3" id="page-content">
+          <section id="page-content">
             {{ page.content }}
           </section>
           <!-- MAIN CONTENT -->
 
+  <div class="container">
+    <div class="row">
+      <div class="col col-print-12">
           <!-- CONTENT AFTER -->
           {% if page.content_after %}
             <aside  id="content-after">
@@ -76,7 +82,7 @@
             </aside>
           {% endif %}
         </div>
-        <!-- CONTENT AFTER --> 
+        <!-- CONTENT AFTER -->
 
       </div>
     </div>
@@ -85,5 +91,5 @@
 <!-- MAIN -->
 
 <!-- FOOTER -->
-{% include '@bootstrap_for_drupal/includes/footer.html.twig' %}
+{% include '@bootstrap_oldphoto/includes/footer.html.twig' %}
 <!-- FOOTER -->

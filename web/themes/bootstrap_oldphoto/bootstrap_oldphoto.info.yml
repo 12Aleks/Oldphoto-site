@@ -8,7 +8,7 @@ base theme: bootstrap_for_drupal
 libraries:
   - bootstrap_oldphoto/global-styling
 libraries-override:
-  bootstrap_for_drupal/global-styling:
+  bootstrap_oldphoto/global-styling:
     css:
       theme:
         assets/css/style.css: assets/css/style.css
