@@ -113,10 +113,61 @@ $newBackground: #86817c;
   animation-iteration-count: 1;
 }
 
-@mixin box-shadow($value) {
-  -webkit-box-shadow: $value;
-  -moz-box-shadow: $value;
-  box-shadow: $value;
+@mixin border-radius($radius ) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
 }
+
+
+@mixin border-pos-rad($topleft, $topright, $bottomright, $bottomleft) {
+  border-top-left-radius: $topleft;
+  border-top-right-radius: $topright;
+  border-bottom-right-radius: $bottomright;
+  border-bottom-left-radius: $bottomleft;
+  -webkit-border-top-left-radius: $topleft;
+  -webkit-border-top-right-radius: $topright;
+  -webkit-border-bottom-right-radius: $bottomright;
+  -webkit-border-bottom-left-radius: $bottomleft;
+  -moz-border-radius-topleft: $topleft;
+  -moz-border-radius-topright: $topright;
+  -moz-border-radius-bottomright: $bottomright;
+  -moz-border-radius-bottomleft: $bottomleft;
+}
+
+@mixin background-size($background-size) {
+  -webkit-background-size: $background-size;
+  -moz-background-size: $background-size;
+  -o-background-size: $background-size;
+  background-size: $background-size;
+}
+
+@mixin transition($property: all, $duration: .3s, $ease: linear) {
+  -webkit-transition: $property $duration $ease;
+  -moz-transition: $property $duration $ease;
+  -o-transition: $property $duration $ease;
+  transition: $property $duration $ease;
+}
+
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+
+@mixin box-shadow($top, $left, $right, $blur, $color, $inset:false ) {
+  @if $inset {
+    -webkit-box-shadow: inset $top $left $right $blur $color;
+    -moz-box-shadow: inset $top $left $right $blur $color;
+    box-shadow: inset $top $left $right $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $right $blur $color;
+    -moz-box-shadow: $top $left $right $blur $color;
+    box-shadow: $top $left $right $blur $color;
+  }
+}
+
 
 /*End global class*/
