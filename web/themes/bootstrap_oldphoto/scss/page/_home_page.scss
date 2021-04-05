@@ -1,0 +1,110 @@
+.page-node-type-main-page{
+  .description {
+    background: $background_block;
+    padding: 8% 0;
+    #about {
+      display: block;
+    }
+  }
+  .projects {
+
+    .all-size {
+      @include flex();
+      @include flex-wrap(wrap);
+    }
+
+    padding: 10rem 0;
+
+    h4 {
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 16px;
+      letter-spacing: 0.05rem;
+      font-weight: 300;
+    }
+
+    .featured-text {
+      padding: 2rem;
+      @media (min-width: 992px) {
+        padding: 2rem 0 2rem 2rem;
+        border-left: 0.5rem solid $site_red;
+      }
+    }
+
+    img.img-fluid.mb-3.mb-lg-0 {
+      -webkit-filter: grayscale(50%);
+      -ms-filter: grayscale(50%);
+      filter: grayscale(50%);
+      //filter: gray;
+    }
+
+    .project-text {
+      background-color: $darkgray;
+      padding: 3rem;
+
+      hr {
+        border-color: #781c2e;
+        border-width: .25rem;
+        width: 30%;
+      }
+
+      @media (min-width: 992px) {
+        padding: 5rem;
+        height: 100%;
+
+      }
+    }
+
+    .container-coins , .container-medals, .container-photo{
+      position: relative;
+      background-position: center center;
+      figcaption {
+        position: absolute;
+        background-color: rgba(55,55,55,0.1);
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        -webkit-transition: background-color 500ms linear;
+        transition: background-color 500ms linear;
+        h2 {
+          color: #fff;
+          text-transform: uppercase;
+          text-decoration: none;
+          font: 400 16px 'IBM Plex Serif', serif;
+          padding: 10px 12px;
+          letter-spacing: 0.07rem;
+          border: 1px solid #fff;
+          background-color: rgba(55,55,55,0.7);
+          opacity: 0;
+          -webkit-transition: background-color 350ms linear;
+          transition: background-color 350ms linear;
+        }
+      }
+      &:hover {
+        figcaption {
+          background-color: rgba(55,55,55,0.8);
+          -webkit-transition: background-color 500ms linear;
+          transition: background-color 350ms linear;
+          h2 {
+            opacity: 1;
+            -webkit-transition: opacity 500ms linear;
+            transition: opacity 350ms linear;
+          }
+        }
+      }
+    }
+
+    @media(min-width: 991.98px) {
+      .img-colect {
+        display: none;
+      }
+      .container-photo, .container-coins, .container-medals {
+        background-size: cover;
+      }
+    }
+  }
+}
+

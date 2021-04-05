@@ -9,6 +9,9 @@
 @import '_global.scss';
 //includes
 @import './includes/_header.scss';
+@import './includes/_footer.scss';
+//page
+@import './page/home_page.scss';
 //block
 @import './block/_block_bannerhomepage.scss';
 
@@ -20,4 +23,20 @@ html, body {
 body {
   overflow-x: hidden;
 }
+
+h1, h2, h3, h4, h5, h6, a, p {
+  font-family: 'Lato', serif !important;
+}
+
+h3 {
+  letter-spacing: 0.13rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+}
+
 

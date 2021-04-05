@@ -1,4 +1,6 @@
 $black: #0a0b0d;
+$background_block: #161616;
+$site_red: #781c2e;
 $gray-dark: #303030;
 $darkgray: #373737;
 $gray: #898989;
@@ -8,6 +10,12 @@ $wight: #fff;
 $newBackground: #86817c;
 
 //flex
+@mixin flex-wrap($wrap) {
+  -webkit-flex-wrap: $wrap;
+  -ms-flex-wrap: $wrap;
+  flex-wrap: $wrap;
+}
+
 @mixin flex() {
   display: -webkit-box;
   display: -moz-box;

@@ -340,6 +340,164 @@ header#header-brand {
   header#header-brand .navigation.menu--main .nav-item.nav-link.is-active:before {
     content: none !important; }
 
+footer#page-footer-sub, footer#page-footer {
+  background-color: #161616; }
+
+footer#page-footer {
+  position: relative;
+  flex: 0 0 auto;
+  width: 100%;
+  bottom: 0;
+  z-index: 10; }
+  footer#page-footer .container-fluid {
+    padding-bottom: 0 !important; }
+  footer#page-footer .row {
+    padding-bottom: 0 !important; }
+    footer#page-footer .row .menu-footer {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -moz-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      width: 100%; }
+      @media (max-width: 575.98px) {
+        footer#page-footer .row .menu-footer {
+          padding: 5% 0 0.8%; } }
+      footer#page-footer .row .menu-footer li a {
+        color: #fff;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem; }
+        @media (max-width: 991.98px) {
+          footer#page-footer .row .menu-footer li a {
+            font-size: 12px; } }
+        @media (max-width: 767.98px) {
+          footer#page-footer .row .menu-footer li a {
+            font-size: 11px;
+            letter-spacing: 0.1rem; } }
+        @media (max-width: 575.98px) {
+          footer#page-footer .row .menu-footer li a {
+            display: block;
+            text-align: center; } }
+      footer#page-footer .row .menu-footer li:not(:last-child) {
+        margin-right: 40px; }
+        @media (max-width: 991.98px) {
+          footer#page-footer .row .menu-footer li:not(:last-child) {
+            margin-right: 25px; } }
+        @media (max-width: 767.98px) {
+          footer#page-footer .row .menu-footer li:not(:last-child) {
+            margin-right: 10px; } }
+        @media (max-width: 575.98px) {
+          footer#page-footer .row .menu-footer li:not(:last-child) {
+            margin-right: 0;
+            display: block;
+            text-align: center;
+            margin-bottom: 5px; } }
+    footer#page-footer .row div p {
+      font: 100 0.8rem 'IBM Plex Serif', serif !important;
+      letter-spacing: 0.3em;
+      margin-bottom: 0;
+      padding: 5px 0;
+      color: #fff; }
+      footer#page-footer .row div p span {
+        font: 100 0.8rem 'IBM Plex Serif', serif !important;
+        color: #fff; }
+      footer#page-footer .row div p a {
+        text-decoration: none; }
+    footer#page-footer .row div .copy {
+      text-align: center;
+      padding-bottom: 2%; }
+
+footer#page-footer-sub p {
+  color: #fff;
+  font: 100 12px/16px Lato, serife; }
+
+.page-node-type-main-page .description {
+  background: #161616;
+  padding: 8% 0; }
+  .page-node-type-main-page .description #about {
+    display: block; }
+.page-node-type-main-page .projects {
+  padding: 10rem 0; }
+  .page-node-type-main-page .projects .all-size {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .page-node-type-main-page .projects h4 {
+    margin-top: 0; }
+  .page-node-type-main-page .projects p {
+    font-size: 16px;
+    letter-spacing: 0.05rem;
+    font-weight: 300; }
+  .page-node-type-main-page .projects .featured-text {
+    padding: 2rem; }
+    @media (min-width: 992px) {
+      .page-node-type-main-page .projects .featured-text {
+        padding: 2rem 0 2rem 2rem;
+        border-left: 0.5rem solid #781c2e; } }
+  .page-node-type-main-page .projects img.img-fluid.mb-3.mb-lg-0 {
+    -webkit-filter: grayscale(50%);
+    -ms-filter: grayscale(50%);
+    filter: grayscale(50%); }
+  .page-node-type-main-page .projects .project-text {
+    background-color: #373737;
+    padding: 3rem; }
+    .page-node-type-main-page .projects .project-text hr {
+      border-color: #781c2e;
+      border-width: .25rem;
+      width: 30%; }
+    @media (min-width: 992px) {
+      .page-node-type-main-page .projects .project-text {
+        padding: 5rem;
+        height: 100%; } }
+  .page-node-type-main-page .projects .container-coins, .page-node-type-main-page .projects .container-medals, .page-node-type-main-page .projects .container-photo {
+    position: relative;
+    background-position: center center; }
+    .page-node-type-main-page .projects .container-coins figcaption, .page-node-type-main-page .projects .container-medals figcaption, .page-node-type-main-page .projects .container-photo figcaption {
+      position: absolute;
+      background-color: rgba(55, 55, 55, 0.1);
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      -webkit-transition: background-color 500ms linear;
+      transition: background-color 500ms linear; }
+      .page-node-type-main-page .projects .container-coins figcaption h2, .page-node-type-main-page .projects .container-medals figcaption h2, .page-node-type-main-page .projects .container-photo figcaption h2 {
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        font: 400 16px 'IBM Plex Serif', serif;
+        padding: 10px 12px;
+        letter-spacing: 0.07rem;
+        border: 1px solid #fff;
+        background-color: rgba(55, 55, 55, 0.7);
+        opacity: 0;
+        -webkit-transition: background-color 350ms linear;
+        transition: background-color 350ms linear; }
+    .page-node-type-main-page .projects .container-coins:hover figcaption, .page-node-type-main-page .projects .container-medals:hover figcaption, .page-node-type-main-page .projects .container-photo:hover figcaption {
+      background-color: rgba(55, 55, 55, 0.8);
+      -webkit-transition: background-color 500ms linear;
+      transition: background-color 350ms linear; }
+      .page-node-type-main-page .projects .container-coins:hover figcaption h2, .page-node-type-main-page .projects .container-medals:hover figcaption h2, .page-node-type-main-page .projects .container-photo:hover figcaption h2 {
+        opacity: 1;
+        -webkit-transition: opacity 500ms linear;
+        transition: opacity 350ms linear; }
+  @media (min-width: 991.98px) {
+    .page-node-type-main-page .projects .img-colect {
+      display: none; }
+    .page-node-type-main-page .projects .container-photo, .page-node-type-main-page .projects .container-coins, .page-node-type-main-page .projects .container-medals {
+      background-size: cover; } }
+
 .home-page-banner {
   position: relative;
   width: 100%;
@@ -408,5 +566,17 @@ html, body {
 
 body {
   overflow-x: hidden; }
+
+h1, h2, h3, h4, h5, h6, a, p {
+  font-family: 'Lato', serif !important; }
+
+h3 {
+  letter-spacing: 0.13rem;
+  font-weight: 300; }
+
+p {
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+  font-weight: 300; }
 
 /*# sourceMappingURL=style.css.map */
