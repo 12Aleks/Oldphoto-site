@@ -3,7 +3,7 @@
  * Subtheme specific SCSS.
  */
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 
 //global class
 @import '_global.scss';
@@ -11,7 +11,8 @@
 @import './includes/_header.scss';
 @import './includes/_footer.scss';
 //page
-@import './page/home_page.scss';
+@import './page/_home_page.scss';
+@import "./page/_contact_page.scss";
 //block
 @import './block/_block_bannerhomepage.scss';
 
@@ -39,4 +40,24 @@ p {
   font-weight: 300;
 }
 
+#main{
+  .region.region-content{
+    width: 100%;
+
+  }
+  padding-top: 55px;
+  .page-title {
+    border-bottom: 1px solid $gray-dark;
+    margin-bottom: 30px;
+
+    h1 {
+      text-transform: uppercase;
+      letter-spacing: 0.07rem;
+      font: 100 1.8rem 'IBM Plex Serif', serif !important;
+      color: $gray-dark;
+      margin: 2rem 0 0;
+      padding-bottom: .5rem;
+    }
+  }
+}
 
