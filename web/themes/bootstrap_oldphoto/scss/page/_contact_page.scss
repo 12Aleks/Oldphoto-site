@@ -1,0 +1,35 @@
+.contact-page {
+  .form-wrapper {
+    //min-height: calc(100vh - 260px);
+    margin: 20px 0;
+    @include flex();
+    @include flex-direction(column);
+    @include justify-content(center);
+
+    .btn-primary {
+      margin-left: 15%;
+    }
+
+    p:not(:last-of-type) {
+      letter-spacing: 0.07rem;
+      @media (max-width: 768.98px) {
+        margin-bottom: .7em;
+      }
+
+      label {
+        text-transform: uppercase;
+        font: 100 1rem 'IBM Plex Serif', serif !important;
+        color: $gray-dark;
+        width: 70%;
+      }
+    }
+
+    .form-control {
+      border: 1px solid $gray-dark;
+
+      &:focus {
+        box-shadow: none !important;
+      }
+    }
+  }
+}

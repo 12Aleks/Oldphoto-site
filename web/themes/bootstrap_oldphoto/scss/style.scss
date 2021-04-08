@@ -39,7 +39,27 @@ p {
   letter-spacing: 0.1rem;
   font-weight: 300;
 }
+ol.breadcrumb {
+  padding: 15px 0 0 0;
+  text-transform: uppercase;
+  font: 100 .8rem 'IBM Plex Serif', serif !important;
+  color: $black;
+  background: $wight;
+  letter-spacing: 0.07rem;
+  text-decoration: transparent;
 
+  span {
+    background: $wight;
+  }
+
+  li.breadcrumb-item a {
+    text-transform: uppercase;
+    font: 100 .8rem 'IBM Plex Serif', serif !important;
+    text-decoration: none;
+    letter-spacing: 0.07rem;
+    color: $black;
+  }
+}
 #main{
   .region.region-content{
     width: 100%;

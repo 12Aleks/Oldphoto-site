@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="359d7cf9-ea80-4fec-9c5c-435be1146255" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/page/_contact_page.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/content/node--contact-page.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/page/page--contact-page.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/navigation/block--breadcrumbs.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/bootstrap_oldphoto.theme" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/bootstrap_oldphoto.theme" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/page/_contact_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/page/_contact_page.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -147,7 +147,8 @@
       <workItem from="1617562446338" duration="5570000" />
       <workItem from="1617608043676" duration="9618000" />
       <workItem from="1617636642289" duration="6131000" />
-      <workItem from="1617730868058" duration="2347000" />
+      <workItem from="1617730868058" duration="3097000" />
+      <workItem from="1617905294128" duration="2306000" />
     </task>
     <servers />
   </component>

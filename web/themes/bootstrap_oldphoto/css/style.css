@@ -498,6 +498,42 @@ footer#page-footer-sub p {
     .page-node-type-main-page .projects .container-photo, .page-node-type-main-page .projects .container-coins, .page-node-type-main-page .projects .container-medals {
       background-size: cover; } }
 
+.contact-page .form-wrapper {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-box-direction: normal;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center; }
+  .contact-page .form-wrapper .btn-primary {
+    margin-left: 15%; }
+  .contact-page .form-wrapper p:not(:last-of-type) {
+    letter-spacing: 0.07rem; }
+    @media (max-width: 768.98px) {
+      .contact-page .form-wrapper p:not(:last-of-type) {
+        margin-bottom: .7em; } }
+    .contact-page .form-wrapper p:not(:last-of-type) label {
+      text-transform: uppercase;
+      font: 100 1rem 'IBM Plex Serif', serif !important;
+      color: #303030;
+      width: 70%; }
+  .contact-page .form-wrapper .form-control {
+    border: 1px solid #303030; }
+    .contact-page .form-wrapper .form-control:focus {
+      box-shadow: none !important; }
+
 .home-page-banner {
   position: relative;
   width: 100%;
@@ -578,6 +614,23 @@ p {
   font-size: 16px;
   letter-spacing: 0.1rem;
   font-weight: 300; }
+
+ol.breadcrumb {
+  padding: 15px 0 0 0;
+  text-transform: uppercase;
+  font: 100 .8rem 'IBM Plex Serif', serif !important;
+  color: #0a0b0d;
+  background: #fff;
+  letter-spacing: 0.07rem;
+  text-decoration: transparent; }
+  ol.breadcrumb span {
+    background: #fff; }
+  ol.breadcrumb li.breadcrumb-item a {
+    text-transform: uppercase;
+    font: 100 .8rem 'IBM Plex Serif', serif !important;
+    text-decoration: none;
+    letter-spacing: 0.07rem;
+    color: #0a0b0d; }
 
 #main {
   padding-top: 55px; }
