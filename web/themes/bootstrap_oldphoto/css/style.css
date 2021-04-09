@@ -615,22 +615,24 @@ p {
   letter-spacing: 0.1rem;
   font-weight: 300; }
 
-ol.breadcrumb {
-  padding: 15px 0 0 0;
-  text-transform: uppercase;
-  font: 100 .8rem 'IBM Plex Serif', serif !important;
-  color: #0a0b0d;
-  background: #fff;
-  letter-spacing: 0.07rem;
-  text-decoration: transparent; }
-  ol.breadcrumb span {
-    background: #fff; }
-  ol.breadcrumb li.breadcrumb-item a {
+div.breadcrumbs {
+  background: #fff; }
+  div.breadcrumbs ol.breadcrumb.bg-light {
+    padding: 15px 0 0 0;
     text-transform: uppercase;
     font: 100 .8rem 'IBM Plex Serif', serif !important;
-    text-decoration: none;
+    color: #0a0b0d;
+    background: #fff !important;
     letter-spacing: 0.07rem;
-    color: #0a0b0d; }
+    text-decoration: transparent; }
+    div.breadcrumbs ol.breadcrumb.bg-light .breadcrumb-item:not(:nth-child(1)):before {
+      content: ">>"; }
+    div.breadcrumbs ol.breadcrumb.bg-light li.breadcrumb-item a {
+      text-transform: uppercase;
+      font: 100 .8rem 'IBM Plex Serif', serif !important;
+      text-decoration: none;
+      letter-spacing: 0.07rem;
+      color: #0a0b0d; }
 
 #main {
   padding-top: 55px; }

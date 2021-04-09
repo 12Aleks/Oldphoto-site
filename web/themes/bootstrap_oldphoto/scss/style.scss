@@ -39,33 +39,38 @@ p {
   letter-spacing: 0.1rem;
   font-weight: 300;
 }
-ol.breadcrumb {
-  padding: 15px 0 0 0;
-  text-transform: uppercase;
-  font: 100 .8rem 'IBM Plex Serif', serif !important;
-  color: $black;
+div.breadcrumbs{
   background: $wight;
-  letter-spacing: 0.07rem;
-  text-decoration: transparent;
-
-  span {
-    background: $wight;
-  }
-
-  li.breadcrumb-item a {
+  ol.breadcrumb.bg-light {
+    padding: 15px 0 0 0;
     text-transform: uppercase;
     font: 100 .8rem 'IBM Plex Serif', serif !important;
-    text-decoration: none;
-    letter-spacing: 0.07rem;
     color: $black;
+    background: $wight !important;
+    letter-spacing: 0.07rem;
+    text-decoration: transparent;
+    .breadcrumb-item:not(:nth-child(1)):before {
+      content: ">>";
+    }
+    li.breadcrumb-item a {
+      text-transform: uppercase;
+      font: 100 .8rem 'IBM Plex Serif', serif !important;
+      text-decoration: none;
+      letter-spacing: 0.07rem;
+      color: $black;
+    }
   }
 }
-#main{
-  .region.region-content{
+
+
+#main {
+  .region.region-content {
     width: 100%;
 
   }
+
   padding-top: 55px;
+
   .page-title {
     border-bottom: 1px solid $gray-dark;
     margin-bottom: 30px;
