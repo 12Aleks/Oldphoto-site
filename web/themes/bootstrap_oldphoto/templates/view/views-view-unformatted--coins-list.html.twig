@@ -1,0 +1,31 @@
+{#
+/**
+ * @file
+ * Theme override to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ */
+#}
+
+{% set row_attribute = create_attribute() %}
+{% set inner_attribute = create_attribute() %}
+
+ {% for row in rows %}
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{{ file_url(row['content']['#row']._entity.translation(lang).field_images.entity.fileuri) }}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"> {{ row.content['#row']._entity.translation(lang).title.value }}</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="/{{ lang }}/node/{{ row.content['#row']._entity.get('nid').value }}" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+ {% endfor %}

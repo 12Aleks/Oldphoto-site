@@ -142,3 +142,24 @@ function bootstrap_oldphoto_form_system_theme_settings_alter(&$form, FormStateIn
 if (\Drupal::service('router.admin_context')->isAdminRoute()) {
   unset($javascript['/sites/ms8.bfd.dev/themes/contrib/bfd/assets/js/popperrr.min.js']);
 }
+
+function bootstrap_oldphoto_preprocess_views_view_unformatted(&$variables) {
+  $variables['lang'] = \Drupal::languageManager()->getCurrentLanguage()->getId();
+}
+function bootstrap_oldphoto_preprocess_page(&$variables) {
+  $variables['lang'] = \Drupal::languageManager()->getCurrentLanguage()->getId();
+}
+function bootstrap_oldphoto_preprocess_html(&$variables) {
+  $variables['language'] = \Drupal::languageManager()->getCurrentLanguage()->getId();
+}
+/**
+ * Change the link title of the language block.
+ */
+function bootstrap_oldphoto_preprocess_links(&$variables) {
+  if ($variables['theme_hook_original'] === 'links__language_block') {
+    $variables['links']['ru']['link']['#title'] = 'RU';
+    $variables['links']['en']['link']['#title'] = 'EN';
+    $variables['links']['pl']['link']['#title'] = 'PL';
+  }
+}
+
