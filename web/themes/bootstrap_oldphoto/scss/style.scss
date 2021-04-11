@@ -42,7 +42,8 @@ p {
 div.breadcrumbs{
   background: $wight;
   ol.breadcrumb.bg-light {
-    padding: 15px 0 0 0;
+    padding: 5px 0 0 0;
+    margin-bottom: 0;
     text-transform: uppercase;
     font: 100 .8rem 'IBM Plex Serif', serif !important;
     color: $black;
@@ -50,7 +51,7 @@ div.breadcrumbs{
     letter-spacing: 0.07rem;
     text-decoration: transparent;
     .breadcrumb-item:not(:nth-child(1)):before {
-      content: ">>";
+      content: ">";
     }
     li.breadcrumb-item a {
       text-transform: uppercase;
@@ -62,6 +63,21 @@ div.breadcrumbs{
   }
 }
 
+.btn, .btn-primary, input.button.button--primary {
+  color: $gray-dark;
+  background-color: $wight;
+  text-transform: uppercase;
+  font: 100 1rem 'IBM Plex Serif', serif !important;
+  border: 1px solid $gray-dark;
+  letter-spacing: 0.07rem;
+  @include border-radius(0);
+
+  &:hover {
+    color: $wight;
+    background-color: $gray-dark;
+    transition: all .5s;
+  }
+}
 
 #main {
   .region.region-content {

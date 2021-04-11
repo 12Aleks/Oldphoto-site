@@ -5,8 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/page/_contact_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/page/_contact_page.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/navigation/block--breadcrumbs.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/content/node--contact-page.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/content/node--contact-page.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,6 +150,7 @@
       <workItem from="1617730868058" duration="3097000" />
       <workItem from="1617905294128" duration="2603000" />
       <workItem from="1617998289510" duration="2519000" />
+      <workItem from="1618127423781" duration="3536000" />
     </task>
     <servers />
   </component>
