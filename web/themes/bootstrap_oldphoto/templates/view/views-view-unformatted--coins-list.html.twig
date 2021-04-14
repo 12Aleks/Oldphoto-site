@@ -19,13 +19,23 @@
 {% set row_attribute = create_attribute() %}
 {% set inner_attribute = create_attribute() %}
 
+{% set row_classes = [
+  default_row_class ? 'content_wrapper', 'col-12', 'col-sm-12', 'col-md-4', 'col-lg-4', 'col-xl-4'
+] %}
+{% set relative_classes = ['card', 'w-100'] %}
+
+
+<div class="row">
  {% for row in rows %}
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="{{ file_url(row['content']['#row']._entity.translation(lang).field_images.entity.fileuri) }}" alt="Card image cap">
+<div{{ row_attribute.addClass(row_classes) }}>
+  <div {{ inner_attribute.addClass(relative_classes) }}>
+  <img class="card-img-top p-3" src="{{ file_url(row['content']['#row']._entity.translation(lang).field_images.entity.fileuri) }}" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title"> {{ row.content['#row']._entity.translation(lang).title.value }}</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="/{{ lang }}/node/{{ row.content['#row']._entity.get('nid').value }}" class="btn btn-primary">Go somewhere</a>
+    <a href="/{{ lang }}/node/{{ row.content['#row']._entity.get('nid').value }}" class="btn button--black d-block m-auto">{{'Learn more'|t}}</a>
   </div>
 </div>
- {% endfor %}
+</div>
+{% endfor %}
+</div>

@@ -13,6 +13,7 @@
 //page
 @import './page/_home_page.scss';
 @import "./page/_contact_page.scss";
+@import "./page/_list_page.scss";
 //block
 @import './block/_block_bannerhomepage.scss';
 
@@ -62,20 +63,32 @@ div.breadcrumbs{
     }
   }
 }
-
-.btn, .btn-primary, input.button.button--primary {
-  color: $gray-dark;
-  background-color: $wight;
+.btn, .btn-primary, input.button.button--primary{
   text-transform: uppercase;
   font: 100 1rem 'IBM Plex Serif', serif !important;
-  border: 1px solid $gray-dark;
   letter-spacing: 0.07rem;
   @include border-radius(0);
-
   &:hover {
-    color: $wight;
     background-color: $gray-dark;
     transition: all .5s;
+  }
+}
+.btn.btn-primary, input.button.button--primary {
+  color: $gray-dark;
+  background-color: $wight;
+  border: 1px solid $gray-dark;
+  &:hover {
+    color: $wight;
+  }
+}
+
+a.button--black{
+  color: $wight;
+  background: $gray-dark;
+  &:hover {
+    color: $gray-dark;
+    background: $wight;
+    border: 1px solid $gray-dark;
   }
 }
 

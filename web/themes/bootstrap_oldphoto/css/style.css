@@ -545,6 +545,14 @@ footer#page-footer-sub p {
   .contact-page .node__content.form-wrapper input.button.button--primary {
     width: 310px; }
 
+.page-node-type-list .card .card-img-top {
+  max-height: 347; }
+.page-node-type-list .card .card-body .card-text {
+  margin-bottom: 30px; }
+.page-node-type-list .card .card-body a.button--black {
+  max-width: 250px;
+  margin-top: 40px; }
+
 .home-page-banner {
   position: relative;
   width: 100%;
@@ -647,19 +655,30 @@ div.breadcrumbs {
       color: #0a0b0d; }
 
 .btn, .btn-primary, input.button.button--primary {
-  color: #303030;
-  background-color: #fff;
   text-transform: uppercase;
   font: 100 1rem 'IBM Plex Serif', serif !important;
-  border: 1px solid #303030;
   letter-spacing: 0.07rem;
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0; }
   .btn:hover, .btn-primary:hover, input.button.button--primary:hover {
-    color: #fff;
     background-color: #303030;
     transition: all .5s; }
+
+.btn.btn-primary, input.button.button--primary {
+  color: #303030;
+  background-color: #fff;
+  border: 1px solid #303030; }
+  .btn.btn-primary:hover, input.button.button--primary:hover {
+    color: #fff; }
+
+a.button--black {
+  color: #fff;
+  background: #303030; }
+  a.button--black:hover {
+    color: #303030;
+    background: #fff;
+    border: 1px solid #303030; }
 
 #main {
   padding-top: 55px; }
