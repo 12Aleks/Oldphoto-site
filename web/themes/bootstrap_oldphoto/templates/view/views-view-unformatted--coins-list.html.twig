@@ -27,12 +27,14 @@
 
 <div class="row">
  {% for row in rows %}
+ {% set title = row.content['#row']._entity.translation(lang).title.value %}
+ {% set body = row.content['#row']._entity.translation(lang).body.value %}
 <div{{ row_attribute.addClass(row_classes) }}>
   <div {{ inner_attribute.addClass(relative_classes) }}>
   <img class="card-img-top p-3" src="{{ file_url(row['content']['#row']._entity.translation(lang).field_images.entity.fileuri) }}" alt="Card image cap">
   <div class="card-body">
-    <h5 class="card-title"> {{ row.content['#row']._entity.translation(lang).title.value }}</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 class="card-title">{{ title|length > 20 ? title|slice(0, 20)|raw ~ ' ...' : title|raw }}</h5>
+    <p class="card-text">{{ body|length > 50 ? body|slice(0, 50)|raw ~ ' ...' : body|raw }}</p>
     <a href="/{{ lang }}/node/{{ row.content['#row']._entity.get('nid').value }}" class="btn button--black d-block m-auto">{{'Learn more'|t}}</a>
   </div>
 </div>

@@ -340,6 +340,9 @@ header#header-brand {
   header#header-brand .navigation.menu--main .nav-item.nav-link.is-active:before {
     content: none !important; }
 
+.page-node-type-list footer#page-footer {
+  margin-top: 50px; }
+
 footer#page-footer-sub, footer#page-footer {
   background-color: #161616; }
 
@@ -561,17 +564,15 @@ footer#page-footer-sub p {
       color: #303030; }
     .page-node-type-list .pagination_box div#pagination .current {
       font-weight: 700; }
-.page-node-type-list nav.navigation {
-  margin-bottom: 50px; }
-  .page-node-type-list nav.navigation ul.pagination {
-    text-align: center;
-    color: #303030; }
-    .page-node-type-list nav.navigation ul.pagination li a.page-link {
-      color: #303030;
-      background-color: #fff;
-      border-color: #fff; }
-    .page-node-type-list nav.navigation ul.pagination li.active a.page-link {
-      font-weight: 700; }
+.page-node-type-list nav.navigation ul.pagination {
+  text-align: center;
+  color: #303030; }
+  .page-node-type-list nav.navigation ul.pagination li a.page-link {
+    color: #303030;
+    background-color: #fff;
+    border-color: #fff; }
+  .page-node-type-list nav.navigation ul.pagination li.active a.page-link {
+    font-weight: 700; }
 
 .home-page-banner {
   position: relative;
