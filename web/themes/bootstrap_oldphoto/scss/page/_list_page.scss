@@ -16,4 +16,44 @@
       }
     }
   }
+
+  .pagination_box {
+    margin-bottom: 50px;
+
+    div#pagination {
+      text-align: center;
+      color: $gray-dark;
+
+      a.page-numbers {
+        color: $gray-dark;
+      }
+
+      .current {
+        font-weight: 700;
+      }
+    }
+  }
+
+  nav.navigation{
+    margin-bottom: 50px;
+    ul.pagination {
+      text-align: center;
+      color: $gray-dark;
+
+      li {
+        a.page-link {
+          color: $gray-dark;
+          background-color: #fff;
+          border-color: #fff;
+        }
+      }
+
+      li.active {
+        a.page-link {
+          font-weight: 700;
+        }
+      }
+    }
+
+  }
 }

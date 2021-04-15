@@ -546,12 +546,32 @@ footer#page-footer-sub p {
     width: 310px; }
 
 .page-node-type-list .card .card-img-top {
-  max-height: 347; }
+  max-height: 347px; }
 .page-node-type-list .card .card-body .card-text {
   margin-bottom: 30px; }
 .page-node-type-list .card .card-body a.button--black {
   max-width: 250px;
   margin-top: 40px; }
+.page-node-type-list .pagination_box {
+  margin-bottom: 50px; }
+  .page-node-type-list .pagination_box div#pagination {
+    text-align: center;
+    color: #303030; }
+    .page-node-type-list .pagination_box div#pagination a.page-numbers {
+      color: #303030; }
+    .page-node-type-list .pagination_box div#pagination .current {
+      font-weight: 700; }
+.page-node-type-list nav.navigation {
+  margin-bottom: 50px; }
+  .page-node-type-list nav.navigation ul.pagination {
+    text-align: center;
+    color: #303030; }
+    .page-node-type-list nav.navigation ul.pagination li a.page-link {
+      color: #303030;
+      background-color: #fff;
+      border-color: #fff; }
+    .page-node-type-list nav.navigation ul.pagination li.active a.page-link {
+      font-weight: 700; }
 
 .home-page-banner {
   position: relative;
