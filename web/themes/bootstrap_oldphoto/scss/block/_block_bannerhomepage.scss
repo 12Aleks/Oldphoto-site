@@ -50,7 +50,11 @@
   }
 
 
-  .btn {
+
+  .btn-vinous {
+    background-color: #781c2e;
+    color: white;
+    transition: background-color .5s;
     -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
     box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
     padding: 1.25rem 2rem;
@@ -58,23 +62,10 @@
     text-transform: uppercase;
     letter-spacing: .15rem;
     border: 0;
-  }
-
-  .btn-primary {
-    background-color: #781c2e;
-    color: white;
-
-    &:hover {
-      background-color: #601625;
-    }
-
-    &:focus {
+    &:hover, &:focus, &:active {
       background-color: #601625;
       color: white;
-    }
-
-    &:active {
-      background-color: #3d151a !important;
+      transition: background-color .5s;
     }
   }
 }

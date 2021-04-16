@@ -54,13 +54,17 @@ header#header-brand {
           font: 100 12px 'IBM Plex Serif', serif !important;
           padding: 1.3rem 0.6rem;
         }
-
+        &:before{
+          content: none;
+        }
         &:hover, &:focus {
           color: #fff;
           font-weight: 100;
         }
       }
-
+      a.nav-link.active{
+        color: #ffffff;
+      }
       a.dropdown-item {
         @media (max-width: 767.98px) {
           padding: 0.6rem 0.7rem;

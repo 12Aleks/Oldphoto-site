@@ -133,7 +133,7 @@
             <img class="img-fluid img-colect"
                  src="{{ content.field_image_numismatic|field_value }}" alt="numismatic">
             <figcaption class="d-flex justify-content-center align-items-center">
-              <a href="<?php echo get_page_link(41) ?>"><h2>{{ 'Learn more'|t }}</h2></a>
+              <a href="{{ url('entity.node.canonical', { 'node' : 4}) }}"><h2>{{ 'Learn more'|t }}</h2></a>
             </figcaption>
           </div>
           <div class="col-lg-6">
@@ -154,7 +154,7 @@
             <img class="img-fluid img-colect"
                  src="{{ content.field_faleristics_image|field_value }}" alt="faleristics">
             <figcaption class="d-flex justify-content-center align-items-center">
-              <a href="<?php echo get_page_link(11) ?>"><h2>{{ 'Learn more'|t }}</h2></a>
+              <a href="{{ url('entity.node.canonical', { 'node': 4 }) }}"><h2>{{ 'Learn more'|t }}</h2></a>
             </figcaption>
           </div>
           <div class="col-lg-6 order-lg-first">
