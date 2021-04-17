@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="359d7cf9-ea80-4fec-9c5c-435be1146255" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/page/page--user--login.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/page/_list_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/page/_list_page.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/view/views-view-unformatted--coins-list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/view/views-view-unformatted--coins-list.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,6 +158,7 @@
       <workItem from="1618503255012" duration="3614000" />
       <workItem from="1618590409380" duration="3259000" />
       <workItem from="1618645220940" duration="3370000" />
+      <workItem from="1618661812125" duration="7010000" />
     </task>
     <servers />
   </component>

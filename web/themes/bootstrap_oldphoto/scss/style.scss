@@ -28,6 +28,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, a, p {
   font-family: 'Lato', serif !important;
+  word-break: break-word;
 }
 
 h3 {
@@ -117,8 +118,11 @@ a.button--black{
 }
 
 .path-user{
-  main.form-login, main.form-login > .container,main.form-login > .container > .row , main.form-login > .row > .col{
+  main.d-print-block ,main.form-login, main.form-login > .container,main.form-login > .container > .row , main.form-login > .row > .col{
     min-height: 90vh;
+  }
+  main.d-print-block{
+    padding-top: 40px;
   }
   main.form-login {
     section.form-login.user.rounded {

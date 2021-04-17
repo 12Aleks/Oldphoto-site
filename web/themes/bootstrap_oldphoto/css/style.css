@@ -552,10 +552,38 @@ footer#page-footer-sub p {
   .contact-page .node__content.form-wrapper input.button.button--primary {
     width: 310px; }
 
-.page-node-type-list .card .card-img-top {
+.page-node-type-list .content_wrapper:not(:nth-last-child(-n+3)) .card {
+  margin-bottom: 15px; }
+.page-node-type-list .card .card-img-top.img-wrapper {
   max-height: 347px; }
-.page-node-type-list .card .card-body .card-text {
-  margin-bottom: 30px; }
+  .page-node-type-list .card .card-img-top.img-wrapper .card-img-background {
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    height: 320px; }
+    @media (min-width: 768px) and (max-width: 1199.98px) {
+      .page-node-type-list .card .card-img-top.img-wrapper .card-img-background {
+        height: 288px;
+        width: auto; } }
+.page-node-type-list .card .card-body .card-title {
+  font: 400 19px/19px Lato; }
+  @media (min-width: 768px) and (max-width: 1199.98px) {
+    .page-node-type-list .card .card-body .card-title {
+      font: 400 18px/18px Lato; } }
+.page-node-type-list .card .card-body .card-text-wrapper {
+  height: 150px; }
+  .page-node-type-list .card .card-body .card-text-wrapper .card-text {
+    margin-bottom: 40px; }
+    @media (min-width: 768px) and (max-width: 1199.98px) {
+      .page-node-type-list .card .card-body .card-text-wrapper .card-text {
+        margin-bottom: 24px; } }
 .page-node-type-list .card .card-body a.button--black {
   max-width: 250px;
   margin-top: 40px; }
@@ -645,7 +673,8 @@ body {
   overflow-x: hidden; }
 
 h1, h2, h3, h4, h5, h6, a, p {
-  font-family: 'Lato', serif !important; }
+  font-family: 'Lato', serif !important;
+  word-break: break-word; }
 
 h3 {
   letter-spacing: 0.13rem;
@@ -717,8 +746,10 @@ a.button--black {
       margin: 2rem 0 0;
       padding-bottom: .5rem; }
 
-.path-user main.form-login, .path-user main.form-login > .container, .path-user main.form-login > .container .row, .path-user main.form-login > .row > .col {
+.path-user main.d-print-block, .path-user main.form-login, .path-user main.form-login > .container, .path-user main.form-login > .container > .row, .path-user main.form-login > .row > .col {
   min-height: 90vh; }
+.path-user main.d-print-block {
+  padding-top: 40px; }
 .path-user main.form-login section.form-login.user.rounded {
   background: #86817c !important;
   padding: 40px 80px !important; }
