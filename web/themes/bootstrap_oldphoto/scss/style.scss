@@ -116,3 +116,26 @@ a.button--black{
   }
 }
 
+.path-user{
+  main.form-login, main.form-login > .container,main.form-login > .container > .row , main.form-login > .row > .col{
+    min-height: 90vh;
+  }
+  main.form-login {
+    section.form-login.user.rounded {
+      background: $newBackground !important;
+      padding: 40px 80px !important;
+      label.custom-control-label,.description{
+        color: $wight;
+      }
+      #edit-submit{
+        max-width: 200px;
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+
+

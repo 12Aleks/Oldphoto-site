@@ -717,4 +717,17 @@ a.button--black {
       margin: 2rem 0 0;
       padding-bottom: .5rem; }
 
+.path-user main.form-login, .path-user main.form-login > .container, .path-user main.form-login > .container .row, .path-user main.form-login > .row > .col {
+  min-height: 90vh; }
+.path-user main.form-login section.form-login.user.rounded {
+  background: #86817c !important;
+  padding: 40px 80px !important; }
+  .path-user main.form-login section.form-login.user.rounded label.custom-control-label, .path-user main.form-login section.form-login.user.rounded .description {
+    color: #fff; }
+  .path-user main.form-login section.form-login.user.rounded #edit-submit {
+    max-width: 200px;
+    width: 100%;
+    display: block;
+    margin: 0 auto; }
+
 /*# sourceMappingURL=style.css.map */
