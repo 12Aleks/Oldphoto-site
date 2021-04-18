@@ -1,10 +1,10 @@
 .page-node-type-list {
 
-  .content_wrapper:not(:nth-last-child(-n+3)) .card {
-    margin-bottom: 15px;
-  }
-
   .card {
+    max-width: 360px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
     .card-img-top.img-wrapper {
       max-height: 347px;
       .card-img-background {
@@ -24,18 +24,25 @@
     }
 
     .card-body {
-      .card-title {
-        font: 400 19px/19px Lato;
-        @media (min-width: 768px) and (max-width: 1199.98px) {
-          font: 400 18px/18px Lato;
+      .card-title-wrapper {
+        height: 45px;
+        .card-title {
+          font: 400 19px/19px Lato;
+          @media (min-width: 768px) and (max-width: 1199.98px) {
+            font: 400 18px/18px Lato;
+          }
         }
       }
       .card-text-wrapper{
-        height: 150px;
+        height: 132px;
         .card-text {
           margin-bottom: 40px;
+          font: 100 15px/18px Lato;
+          letter-spacing: 1.5px;
           @media (min-width: 768px) and (max-width: 1199.98px) {
             margin-bottom: 24px;
+            font: 100 14px/18px Lato;
+            letter-spacing: 1.2px;
           }
         }
       }
