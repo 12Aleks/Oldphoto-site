@@ -145,6 +145,11 @@ if (\Drupal::service('router.admin_context')->isAdminRoute()) {
 
 function bootstrap_oldphoto_preprocess_views_view_unformatted(&$variables) {
   $variables['lang'] = \Drupal::languageManager()->getCurrentLanguage()->getId();
+//  if(!empty($variables['rows'][0]['content']['#row'])){
+//    foreach ($variables['rows'] as $key => $row){
+//      $variables['rows'][$key]['category_id'] = 'category-' . $row['content']['row']->{'_entity'}->field_category_gallery->target_id;
+//    }
+//  }
 }
 function bootstrap_oldphoto_preprocess_page(&$variables) {
   $variables['lang'] = \Drupal::languageManager()->getCurrentLanguage()->getId();
@@ -162,4 +167,5 @@ function bootstrap_oldphoto_preprocess_links(&$variables) {
     $variables['links']['pl']['link']['#title'] = 'PL';
   }
 }
+
 
