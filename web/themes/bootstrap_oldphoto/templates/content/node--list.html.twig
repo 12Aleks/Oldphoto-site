@@ -80,10 +80,10 @@
   view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 ]
 %}
-{% set view_coins = drupal_view('coins_list', 'block_1') %}
+{% set view_coins = drupal_view('coins_filter_list', 'page_1') %}
+
 {{ attach_library('classy/node') }}
 <article{{ attributes.addClass(classes) }}>
-
   {{ title_prefix }}
   {% if label %}
     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">
@@ -96,12 +96,16 @@
   {% endif %}
   {{ title_suffix }}
 
-
   <div{{ content_attributes.addClass('node__content') }}>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+      {{ searchform }}
+      {{ coins  }}
+    </div>
     {% if view_coins %}
+    <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
         {{ view_coins }}
+    </div>
     {% endif %}
-
   </div>
 
 </article>

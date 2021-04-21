@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="359d7cf9-ea80-4fec-9c5c-435be1146255" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/block/block--sidebar.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/field/field--taxonomy-term--coins-category.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/bootstrap_oldphoto.info.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/bootstrap_oldphoto.info.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/bootstrap_oldphoto.theme" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/bootstrap_oldphoto.theme" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/content/node--list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/content/node--list.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/page/page--list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/page/page--list.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/view/views-view-unformatted--coins-list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/view/views-view-unformatted--coins-list.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/view/views-view-unformatted--coins-list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/view/views-view-unformatted--coins-filter-list.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +103,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../old_www-oldphoto/web/themes/bootstrap_barrio/templates/layout/page.html.twig" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
@@ -178,6 +174,8 @@
       <workItem from="1618854966491" duration="2790000" />
       <workItem from="1618857896524" duration="2638000" />
       <workItem from="1618941644703" duration="1126000" />
+      <workItem from="1619011771763" duration="2435000" />
+      <workItem from="1619025497955" duration="3803000" />
     </task>
     <servers />
   </component>

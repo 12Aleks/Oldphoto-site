@@ -54,12 +54,6 @@
   <div class="container">
     <div class="row">
 
-      <!-- If no sidebar_left content take full width -->
-      {% set content_classes = (page.sidebar_left) ? 'col-md-8 col-lg-9' : 'col-12' %}
-      <!-- If no sidebar_left content take full width -->
-
-
-      <!-- CONTENT BEFORE -->
       {% if page.content_before %}
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">
           <div class="breadcrumbs">
@@ -67,26 +61,28 @@
           </div>
         </div>
       {% endif %}
-      <!-- CONTENT BEFORE -->
 
-      <!-- MAIN CONTENT -->
-      {{ page.content }}
-      <!-- MAIN CONTENT -->
+        <!-- MAIN CONTENT -->
 
+          {{ page.content }}
+
+        <!-- MAIN CONTENT -->
+
+        <!-- CONTENT AFTER -->
+        {% if page.content_after %}
+          <aside  id="content-after">
+            {{ page.content_after }}
+          </aside>
+        {% endif %}
       <!-- CONTENT AFTER -->
-      {% if page.content_after %}
-        <aside id="content-after">
-          {{ page.content_after }}
-        </aside>
-      {% endif %}
+
+      <!-- ASIDE CONTENT -->
+      {% include '@bootstrap_for_drupal/includes/aside-content.html.twig' %}
+      <!-- ASIDE CONTENT -->
+
     </div>
-    <!-- CONTENT AFTER -->
-
-    <!-- ASIDE CONTENT -->
-    {% include '@bootstrap_oldphoto/includes/aside-content.html.twig' %}
-    <!-- ASIDE CONTENT -->
-
   </div>
+
 
 </main>
 <!-- MAIN -->
