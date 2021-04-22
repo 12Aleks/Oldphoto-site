@@ -53,7 +53,6 @@
 
   <div class="container">
     <div class="row">
-
       {% if page.content_before %}
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">
           <div class="breadcrumbs">
@@ -63,9 +62,19 @@
       {% endif %}
 
         <!-- MAIN CONTENT -->
-
+      <div class="col-sm-12 col-md-12 col-lg-12 col-12 p-0">
+        <div class="page-title">
+        <h1 {{ title_attributes }}>{{ node.label|t }}</h1>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3  d-none d-sm-block sidebar-wrapper">
+        <div class="sidebar bg-light h-100">
+          {{ page.sidebar_left }}
+        </div>
+      </div>
+      <div class="col-sm-9 ml-sm-auto col-md-9 col-lg-9 col-xl-9 main-content">
           {{ page.content }}
-
+      </div>
         <!-- MAIN CONTENT -->
 
         <!-- CONTENT AFTER -->
@@ -75,10 +84,6 @@
           </aside>
         {% endif %}
       <!-- CONTENT AFTER -->
-
-      <!-- ASIDE CONTENT -->
-      {% include '@bootstrap_for_drupal/includes/aside-content.html.twig' %}
-      <!-- ASIDE CONTENT -->
 
     </div>
   </div>

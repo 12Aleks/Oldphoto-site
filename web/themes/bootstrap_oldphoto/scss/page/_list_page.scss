@@ -1,12 +1,12 @@
 .page-node-type-list {
 
   .card {
-    max-width: 360px;
-    display: block;
-    margin: 0 auto;
+    max-width: 255px;
     margin-bottom: 15px;
+
     .card-img-top.img-wrapper {
       max-height: 347px;
+
       .card-img-background {
         @include background-size(contain);
         background-repeat: no-repeat;
@@ -26,6 +26,7 @@
     .card-body {
       .card-title-wrapper {
         height: 45px;
+
         .card-title {
           font: 400 19px/19px Lato;
           @media (min-width: 768px) and (max-width: 1199.98px) {
@@ -33,8 +34,10 @@
           }
         }
       }
-      .card-text-wrapper{
+
+      .card-text-wrapper {
         height: 132px;
+
         .card-text {
           margin-bottom: 40px;
           font: 100 15px/18px Lato;
@@ -46,6 +49,7 @@
           }
         }
       }
+
       a.button--black {
         max-width: 250px;
         margin-top: 40px;
@@ -90,4 +94,30 @@
       }
     }
   }
+
+  .sidebar-wrapper {
+    .sidebar {
+      position: relative;
+      z-index: 1000;
+      padding: 15px;
+      border-right: 1px solid #eee;
+      .form-search{
+        max-width: 190px;
+        width: 100%;
+      }
+      select#edit-tid--2{
+        width: 223px;
+        max-width: 223px;
+      }
+    }
+  }
+
+
+  @media (min-width: 250px) {
+    .ml-sm-auto, .mx-sm-auto {
+      margin-left: auto !important;
+    }
+  }
+
+
 }
