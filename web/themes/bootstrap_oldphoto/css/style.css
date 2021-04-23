@@ -556,7 +556,7 @@ footer#page-footer-sub p {
   max-width: 255px;
   margin-bottom: 15px; }
   .page-node-type-list .card .card-img-top.img-wrapper {
-    max-height: 347px; }
+    max-height: 252px; }
     .page-node-type-list .card .card-img-top.img-wrapper .card-img-background {
       -webkit-background-size: contain;
       -moz-background-size: contain;
@@ -567,23 +567,23 @@ footer#page-footer-sub p {
       display: block;
       margin-left: auto;
       margin-right: auto;
-      max-width: 300px;
-      height: 320px; }
+      max-width: 236px;
+      height: 236px; }
       @media (min-width: 768px) and (max-width: 1199.98px) {
         .page-node-type-list .card .card-img-top.img-wrapper .card-img-background {
           height: 288px;
           width: auto; } }
   .page-node-type-list .card .card-body .card-title-wrapper {
-    height: 45px; }
+    height: 30px; }
     .page-node-type-list .card .card-body .card-title-wrapper .card-title {
       font: 400 19px/19px Lato; }
       @media (min-width: 768px) and (max-width: 1199.98px) {
         .page-node-type-list .card .card-body .card-title-wrapper .card-title {
           font: 400 18px/18px Lato; } }
   .page-node-type-list .card .card-body .card-text-wrapper {
-    height: 132px; }
+    height: 118px; }
     .page-node-type-list .card .card-body .card-text-wrapper .card-text {
-      margin-bottom: 40px;
+      margin-bottom: 26px;
       font: 100 15px/18px Lato;
       letter-spacing: 1.5px; }
       @media (min-width: 768px) and (max-width: 1199.98px) {
@@ -612,17 +612,25 @@ footer#page-footer-sub p {
     border-color: #fff; }
   .page-node-type-list nav.navigation ul.pagination li.active a.page-link {
     font-weight: 700; }
-.page-node-type-list .sidebar-wrapper .sidebar {
-  position: relative;
-  z-index: 1000;
-  padding: 15px;
-  border-right: 1px solid #eee; }
-  .page-node-type-list .sidebar-wrapper .sidebar .form-search {
-    max-width: 190px;
-    width: 100%; }
-  .page-node-type-list .sidebar-wrapper .sidebar select#edit-tid--2 {
-    width: 223px;
-    max-width: 223px; }
+.page-node-type-list .sidebar-wrapper {
+  height: 551px; }
+  .page-node-type-list .sidebar-wrapper .sidebar {
+    height: 240px;
+    position: relative;
+    z-index: 1000;
+    padding: 15px;
+    border-right: 1px solid #eee; }
+    .page-node-type-list .sidebar-wrapper .sidebar input#edit-submit, .page-node-type-list .sidebar-wrapper .sidebar input#edit-submit-coins-filter-list--2 {
+      width: 100%; }
+    .page-node-type-list .sidebar-wrapper .sidebar .form-search {
+      max-width: 190px;
+      width: 100%; }
+    .page-node-type-list .sidebar-wrapper .sidebar .block-views-exposed-filter-blockcoins-filter-list-page-1 div.form-item {
+      margin-top: 40px;
+      margin-bottom: 0;
+      width: 100%; }
+    .page-node-type-list .sidebar-wrapper .sidebar .block-views-exposed-filter-blockcoins-filter-list-page-1 select#edit-tid--2 input#edit-submit-coins-filter-list--2 {
+      margin-top: 0; }
 @media (min-width: 250px) {
   .page-node-type-list .ml-sm-auto, .page-node-type-list .mx-sm-auto {
     margin-left: auto !important; } }
@@ -726,15 +734,16 @@ div.breadcrumbs {
       letter-spacing: 0.07rem;
       color: #0a0b0d; }
 
-.btn, .btn-primary, input.button.button--primary {
+.btn, .btn-primary, input.button.button--primary, input#edit-submit, input#edit-submit-coins-filter-list--2 {
   text-transform: uppercase;
   font: 100 1rem 'IBM Plex Serif', serif !important;
   letter-spacing: 0.07rem;
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0; }
-  .btn:hover, .btn-primary:hover, input.button.button--primary:hover {
+  .btn:hover, .btn:focus, .btn-primary:hover, .btn-primary:focus, input.button.button--primary:hover, input.button.button--primary:focus, input#edit-submit:hover, input#edit-submit:focus, input#edit-submit-coins-filter-list--2:hover, input#edit-submit-coins-filter-list--2:focus {
     background-color: #303030;
+    border-color: #303030;
     transition: all .5s; }
 
 .btn.btn-primary, input.button.button--primary {

@@ -65,13 +65,14 @@ div.breadcrumbs{
   }
 }
 
-.btn, .btn-primary, input.button.button--primary{
+.btn, .btn-primary, input.button.button--primary, input#edit-submit, input#edit-submit-coins-filter-list--2{
   text-transform: uppercase;
   font: 100 1rem 'IBM Plex Serif', serif !important;
   letter-spacing: 0.07rem;
   @include border-radius(0);
-  &:hover {
+  &:hover, &:focus {
     background-color: $gray-dark;
+    border-color: $gray-dark;
     transition: all .5s;
   }
 }

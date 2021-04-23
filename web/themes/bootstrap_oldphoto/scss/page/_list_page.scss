@@ -5,8 +5,7 @@
     margin-bottom: 15px;
 
     .card-img-top.img-wrapper {
-      max-height: 347px;
-
+      max-height: 252px;
       .card-img-background {
         @include background-size(contain);
         background-repeat: no-repeat;
@@ -14,8 +13,8 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        max-width: 300px;
-        height: 320px;
+        max-width: 236px;
+        height: 236px;
         @media (min-width: 768px) and (max-width: 1199.98px) {
           height: 288px;
           width: auto;
@@ -25,7 +24,7 @@
 
     .card-body {
       .card-title-wrapper {
-        height: 45px;
+        height: 30px;
 
         .card-title {
           font: 400 19px/19px Lato;
@@ -36,10 +35,10 @@
       }
 
       .card-text-wrapper {
-        height: 132px;
+        height: 118px;
 
         .card-text {
-          margin-bottom: 40px;
+          margin-bottom: 26px;
           font: 100 15px/18px Lato;
           letter-spacing: 1.5px;
           @media (min-width: 768px) and (max-width: 1199.98px) {
@@ -96,18 +95,32 @@
   }
 
   .sidebar-wrapper {
+    height: 551px;
+
     .sidebar {
+      height: 240px;
       position: relative;
       z-index: 1000;
       padding: 15px;
       border-right: 1px solid #eee;
+      input#edit-submit, input#edit-submit-coins-filter-list--2{
+        width: 100%;
+      }
       .form-search{
         max-width: 190px;
         width: 100%;
       }
-      select#edit-tid--2{
-        width: 223px;
-        max-width: 223px;
+      .block-views-exposed-filter-blockcoins-filter-list-page-1{
+        div.form-item{
+          margin-top: 40px;
+          margin-bottom: 0;
+          width: 100%;
+        }
+        select#edit-tid--2{
+          input#edit-submit-coins-filter-list--2{
+            margin-top: 0;
+          }
+        }
       }
     }
   }
