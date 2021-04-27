@@ -507,7 +507,7 @@ footer#page-footer-sub p {
 
 .contact-page .node__content.form-wrapper {
   min-height: calc(100vh - 293px);
-  margin: 20px 0;
+  margin: 20px auto;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
