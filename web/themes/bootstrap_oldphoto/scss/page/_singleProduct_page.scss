@@ -1,0 +1,24 @@
+.page-node-type-coins {
+  .node--type-coins{
+    min-height: calc(100vh - 293px);
+    .entry-content {
+      span.post-description-title {
+        float: left;
+        margin-right: 5px;
+        font: 700 17px/15px Roboto Condensed, sans-serif !important;
+        @media (max-width: 991.98px) {
+          font: 700 16px/14px Roboto Condensed, sans-serif !important;
+        }
+      }
+
+      p {
+        font: 400 16px/18px Roboto, sans-serif !important;
+        margin-bottom: .8rem;
+        @media (max-width: 991.98px) {
+          font: 400 15px/16px Roboto, sans-serif !important;
+          margin-bottom: .1rem;
+        }
+      }
+    }
+  }
+}

@@ -70,16 +70,14 @@
  *   in different view modes.
  */
 #}
-{%
-  set classes = [
+{% set classes = [
   'node',
   'node--type-' ~ node.bundle|clean_class,
   node.isPromoted() ? 'node--promoted',
   node.isSticky() ? 'node--sticky',
   not node.isPublished() ? 'node--unpublished',
   view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
-]
-%}
+] %}
 {{ attach_library('classy/node') }}
 <article{{ attributes.addClass(classes) }}>
 
@@ -92,28 +90,31 @@
   {{ title_suffix }}
 
   <div{{ content_attributes.addClass('node__content') }}>
-    <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-5 offset-md-0 col-lg-4 offset-lg-0 col-xl-4 offset-xl-0 imgStyle">
-
-    </div>
-    <div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-8">
-      {% if content.field_descriptions is not empty %}
-      <div class="entry-content">
-        <span class="post-description-title">{{ 'Description'|t }}:</span>
-        {{ content.field_descriptions|field_value }}
+    <div class="row">
+      <div
+        class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-5 offset-md-0 col-lg-4 offset-lg-0 col-xl-4 offset-xl-0 imgStyle">
+        Test
       </div>
-      {% endif %}
-      {% if content.field_additional_data is not empty %}
-      <div class="entry-content">
-        <span class="post-description-title">{{ 'Additional data'|t }}: </span>
-        {{ content.field_additional_data|field_value }}
+      <div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-8">
+        {% if content.field_descriptions[0] is not empty %}
+          <div class="entry-content">
+            <span class="post-description-title">{{ 'Description'|t }}:</span>
+            {{ content.field_descriptions|field_value }}
+          </div>
+        {% endif %}
+        {% if content.field_additional_data[0] is not empty %}
+          <div class="entry-content">
+            <span class="post-description-title">{{ 'Additional data'|t }}: </span>
+            {{ content.field_additional_data|field_value }}
+          </div>
+        {% endif %}
+        {% if content.field_minting_date[0] is not empty %}
+          <div class="entry-content">
+            <span class="post-description-title">{{ 'Minting Date'|t }}: </span>
+            {{ content.field_minting_date|field_value }}
+          </div>
+        {% endif %}
       </div>
-      {% endif %}
-      {% if content.field_minting_date is not empty %}
-      <div class="entry-content">
-        <span class="post-description-title">{{ 'Minting Date'|t }}: </span>
-        {{ content.field_minting_date|field_value }}
-      </div>
-      {% endif %}
     </div>
   </div>
 

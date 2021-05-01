@@ -3,6 +3,8 @@
  * Subtheme specific SCSS.
  */
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
 /*End global class*/
 header#header-brand {
@@ -634,6 +636,23 @@ footer#page-footer-sub p {
 @media (min-width: 250px) {
   .page-node-type-list .ml-sm-auto, .page-node-type-list .mx-sm-auto {
     margin-left: auto !important; } }
+
+.page-node-type-coins .node--type-coins {
+  min-height: calc(100vh - 293px); }
+  .page-node-type-coins .node--type-coins .entry-content span.post-description-title {
+    float: left;
+    margin-right: 5px;
+    font: 700 17px/15px Roboto Condensed, sans-serif !important; }
+    @media (max-width: 991.98px) {
+      .page-node-type-coins .node--type-coins .entry-content span.post-description-title {
+        font: 700 16px/14px Roboto Condensed, sans-serif !important; } }
+  .page-node-type-coins .node--type-coins .entry-content p {
+    font: 400 16px/18px Roboto, sans-serif !important;
+    margin-bottom: .8rem; }
+    @media (max-width: 991.98px) {
+      .page-node-type-coins .node--type-coins .entry-content p {
+        font: 400 15px/16px Roboto, sans-serif !important;
+        margin-bottom: .1rem; } }
 
 .home-page-banner {
   position: relative;

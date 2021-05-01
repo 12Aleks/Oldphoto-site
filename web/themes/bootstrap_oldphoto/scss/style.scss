@@ -3,6 +3,8 @@
  * Subtheme specific SCSS.
  */
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 
 //global class
@@ -14,6 +16,7 @@
 @import './page/_home_page.scss';
 @import "./page/_contact_page.scss";
 @import "./page/_list_page.scss";
+@import "./page/singleProduct_page.scss";
 //block
 @import './block/_block_bannerhomepage.scss';
 
