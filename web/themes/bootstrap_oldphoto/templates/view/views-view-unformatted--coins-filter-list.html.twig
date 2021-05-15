@@ -42,7 +42,7 @@
             class="card-title">{{ title|length > 22 ? title|slice(0, 22)|striptags|trim ~ ' ...' : title|striptags|trim }}</h5>
           </div>
             <div class="card-text-wrapper"><p
-              class="card-text">{{ body|length > 100 ? body|slice(0, 100)|striptags|trim ~ ' ...' : body|striptags|trim }}</p>
+              class="card-text">{{ body|length > 85 ? body|slice(0, 85)|striptags|trim ~ ' ...' : body|striptags|trim }}</p>
           </div>
           <a href="/{{ lang }}/node/{{ row.content['#row']._entity.get('nid').value }}"
              class="btn button--black d-block m-auto">{{ 'Learn more'|t }}</a>

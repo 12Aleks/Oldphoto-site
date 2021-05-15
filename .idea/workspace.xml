@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="359d7cf9-ea80-4fec-9c5c-435be1146255" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/page/_singleProduct_page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/bootstrap-gallery/bootstrap-basic-image-gallery.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/page/_list_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/page/_list_page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/page/_singleProduct_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/page/_singleProduct_page.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/content/node--coins.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/content/node--coins.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/view/views-view-unformatted--coins-filter-list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/view/views-view-unformatted--coins-filter-list.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +107,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../react-shop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
@@ -119,6 +121,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\oldphoto\xampp\htdocs\www-oldphoto\web\themes\bootstrap_oldphoto\templates\bootstrap-gallery" />
       <recent name="D:\project\oldphoto\xampp\htdocs\www-oldphoto\web\themes\bootstrap_oldphoto\templates" />
       <recent name="D:\project\oldphoto\xampp\htdocs\www-oldphoto\web\sites\default" />
       <recent name="D:\project\oldphoto\xampp\htdocs\www-oldphoto\web\themes\bfd\templates\page" />
@@ -186,6 +189,15 @@
       <workItem from="1619804774924" duration="1470000" />
       <workItem from="1619839713354" duration="779000" />
       <workItem from="1619879299602" duration="5604000" />
+      <workItem from="1619892565381" duration="591000" />
+      <workItem from="1619939896101" duration="1220000" />
+      <workItem from="1619981698261" duration="593000" />
+      <workItem from="1620572323045" duration="2600000" />
+      <workItem from="1620671609960" duration="593000" />
+      <workItem from="1620756905884" duration="801000" />
+      <workItem from="1620843793414" duration="626000" />
+      <workItem from="1621016921013" duration="593000" />
+      <workItem from="1621104901663" duration="4014000" />
     </task>
     <servers />
   </component>

@@ -1,7 +1,10 @@
 .page-node-type-coins {
-  .node--type-coins{
+  .node--type-coins {
     min-height: calc(100vh - 293px);
+
     .entry-content {
+      margin-bottom: 20px;
+
       span.post-description-title {
         float: left;
         margin-right: 5px;
@@ -21,4 +24,30 @@
       }
     }
   }
+  .article.node img[class*="image-style"]{
+    float: none;
+  }
+  .bootstrap-basic-image-gallery {
+    padding: 10px 15px;
+    border: 1px solid $wight-dark;
+    border-radius: 2px;
+    .main-image{
+      img{
+        float: none;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    .thumbnails {
+      .thumb {
+        img[class*="image-style"] {
+          float: none;
+          display: block;
+          margin: 10px auto;
+        }
+      }
+    }
+  }
+
+
 }

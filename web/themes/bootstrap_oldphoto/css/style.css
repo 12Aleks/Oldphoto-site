@@ -570,7 +570,7 @@ footer#page-footer-sub p {
       margin-left: auto;
       margin-right: auto;
       max-width: 236px;
-      height: 236px; }
+      height: 200px; }
       @media (min-width: 768px) and (max-width: 1199.98px) {
         .page-node-type-list .card .card-img-top.img-wrapper .card-img-background {
           height: 288px;
@@ -583,7 +583,7 @@ footer#page-footer-sub p {
         .page-node-type-list .card .card-body .card-title-wrapper .card-title {
           font: 400 18px/18px Lato; } }
   .page-node-type-list .card .card-body .card-text-wrapper {
-    height: 118px; }
+    height: 100px; }
     .page-node-type-list .card .card-body .card-text-wrapper .card-text {
       margin-bottom: 26px;
       font: 100 15px/18px Lato;
@@ -639,20 +639,36 @@ footer#page-footer-sub p {
 
 .page-node-type-coins .node--type-coins {
   min-height: calc(100vh - 293px); }
-  .page-node-type-coins .node--type-coins .entry-content span.post-description-title {
-    float: left;
-    margin-right: 5px;
-    font: 700 17px/15px Roboto Condensed, sans-serif !important; }
-    @media (max-width: 991.98px) {
-      .page-node-type-coins .node--type-coins .entry-content span.post-description-title {
-        font: 700 16px/14px Roboto Condensed, sans-serif !important; } }
-  .page-node-type-coins .node--type-coins .entry-content p {
-    font: 400 16px/18px Roboto, sans-serif !important;
-    margin-bottom: .8rem; }
-    @media (max-width: 991.98px) {
-      .page-node-type-coins .node--type-coins .entry-content p {
-        font: 400 15px/16px Roboto, sans-serif !important;
-        margin-bottom: .1rem; } }
+  .page-node-type-coins .node--type-coins .entry-content {
+    margin-bottom: 20px; }
+    .page-node-type-coins .node--type-coins .entry-content span.post-description-title {
+      float: left;
+      margin-right: 5px;
+      font: 700 17px/15px Roboto Condensed, sans-serif !important; }
+      @media (max-width: 991.98px) {
+        .page-node-type-coins .node--type-coins .entry-content span.post-description-title {
+          font: 700 16px/14px Roboto Condensed, sans-serif !important; } }
+    .page-node-type-coins .node--type-coins .entry-content p {
+      font: 400 16px/18px Roboto, sans-serif !important;
+      margin-bottom: .8rem; }
+      @media (max-width: 991.98px) {
+        .page-node-type-coins .node--type-coins .entry-content p {
+          font: 400 15px/16px Roboto, sans-serif !important;
+          margin-bottom: .1rem; } }
+.page-node-type-coins .article.node img[class*="image-style"] {
+  float: none; }
+.page-node-type-coins .bootstrap-basic-image-gallery {
+  padding: 10px 15px;
+  border: 1px solid #f0f0f0;
+  border-radius: 2px; }
+  .page-node-type-coins .bootstrap-basic-image-gallery .main-image img {
+    float: none;
+    display: block;
+    margin: 0 auto; }
+  .page-node-type-coins .bootstrap-basic-image-gallery .thumbnails .thumb img[class*="image-style"] {
+    float: none;
+    display: block;
+    margin: 10px auto; }
 
 .home-page-banner {
   position: relative;

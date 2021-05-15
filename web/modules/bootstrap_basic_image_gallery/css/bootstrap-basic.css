@@ -1,0 +1,27 @@
+.bootstrap-basic-image-gallery .modal.carousel {
+  /* Needed because the carousel overrides the position property */
+  position: fixed;
+}
+.bootstrap-basic-image-gallery .modal .carousel .item img {
+  margin: 0px auto;
+}
+.bootstrap-basic-image-gallery .main-image {
+  width: 100%;
+  cursor: pointer;
+}
+.bootstrap-basic-image-gallery .thumbnails {
+  width: 100%;
+  cursor: pointer;
+}
+.bootstrap-basic-image-gallery .thumbnails:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.bootstrap-basic-image-gallery .thumbnails .thumb {
+  float: left;
+}
+.bootstrap-basic-image-gallery .thumbnails .thumb img {
+  display: block;
+  margin: 0px auto;
+}
