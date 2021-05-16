@@ -98,8 +98,16 @@
       <div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-8">
         {% if content.field_minting_date[0] is not empty %}
           <div class="entry-content">
-            <span class="post-description-title">{{ 'Minting Date'|t }}: </span>
-            <p>{{ content.field_minting_date|field_value }}</p>
+            <span class="post-description-title">{{ 'Production date'|t }}: </span>
+            <p>{{ content.field_minting_date|field_value }} year</p>
+            {% if content.field_category[0] is not empty %}
+            <span class="post-description-title">{{ 'Country'|t }}: </span>
+            <p>{{ content.field_category|field_value|render|striptags }}</p>
+            {% endif %}
+            {% if content.field_metal[0] is not empty %}
+            <span class="post-description-title">{{ 'Metal'|t }}: </span>
+            <p>{{ content.field_metal|field_value|render|striptags }}</p>
+            {% endif %}
           </div>
         {% endif %}
         {% if content.field_descriptions[0] is not empty %}
