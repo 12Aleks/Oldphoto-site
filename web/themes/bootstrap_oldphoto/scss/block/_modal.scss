@@ -1,0 +1,29 @@
+.page-node-type-coins {
+  .node--type-coins {
+    .modal-dialog{
+      @media (min-width: 576px) {
+        max-width: 600px;
+        margin: 1.75rem auto;
+      }
+      .modal-header{
+        button{
+          span{
+            font-size: 25px;
+          }
+        }
+      }
+      .modal-body{
+        ol.carousel-indicators {
+          bottom: -74px;
+          li{
+            background-color: $black !important;
+            width: 40px;
+          }
+        }
+      }
+      .modal-footer{
+        height: 60px;
+      }
+    }
+  }
+}

@@ -10,3 +10,4 @@ global-styling:
       css/style.css: {}
   js:
     assets/js/global.js: {}
+    js/script.js: {}
