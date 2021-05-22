@@ -17,7 +17,7 @@ final class BlockViewBuilderTest extends KernelTestBase {
   /**
    * {@inheritdoc}
    */
-  public static $modules = [
+  protected static $modules = [
     'twig_tweak',
     'twig_tweak_test',
     'user',

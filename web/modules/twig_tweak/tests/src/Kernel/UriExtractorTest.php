@@ -12,7 +12,7 @@ final class UriExtractorTest extends AbstractExtractorTestCase {
   /**
    * Test callback.
    */
-  public function testUrlExtractor(): void {
+  public function testUriExtractor(): void {
 
     $extractor = $this->container->get('twig_tweak.uri_extractor');
 

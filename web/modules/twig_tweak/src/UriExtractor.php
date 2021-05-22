@@ -32,25 +32,27 @@ class UriExtractor {
   /**
    * Returns a URI to the file.
    *
-   * @param object|null $input
+   * @param Object|null $input
    *   An object that contains the URI.
    *
    * @return string|null
    *   A URI that may be used to access the file.
    */
   public function extractUri(?object $input): ?string {
-    if ($input instanceof ContentEntityInterface) {
-      return self::getUriFromEntity($input);
-    }
-    elseif ($input instanceof EntityReferenceFieldItemListInterface) {
+    $entity = $input;
+    if ($input instanceof EntityReferenceFieldItemListInterface) {
       if ($item = $input->first()) {
-        return $this->getUriFromEntity($item->entity);
+        $entity = $item->entity;
       }
     }
     elseif ($input instanceof EntityReferenceItem) {
-      return self::getUriFromEntity($input->entity);
+      $entity = $input->entity;
     }
-    return NULL;
+    // Drupal does not clean up references to deleted entities. So that the
+    // entity property might be empty while the field item might not.
+    // @see https://www.drupal.org/project/drupal/issues/2723323
+    return $entity instanceof ContentEntityInterface ?
+      $this->getUriFromEntity($entity) : NULL;
   }
 
   /**
@@ -60,7 +62,7 @@ class UriExtractor {
    *   Entity object that contains information about the file.
    *
    * @return string|null
-   *   A URI that may be used to access the file.
+   *   A URI that can be used to access the file.
    */
   private function getUriFromEntity(ContentEntityInterface $entity): ?string {
     if ($entity instanceof MediaInterface) {

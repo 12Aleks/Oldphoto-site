@@ -15,7 +15,7 @@ final class MenuViewBuilderTest extends KernelTestBase {
   /**
    * {@inheritdoc}
    */
-  public static $modules = [
+  protected static $modules = [
     'twig_tweak',
     'user',
     'system',

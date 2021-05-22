@@ -113,6 +113,7 @@ class TwigTweakExtension extends AbstractExtension {
       new TwigFilter('file_uri', [self::class, 'fileUriFilter']),
       new TwigFilter('file_url', [self::class, 'fileUrlFilter']),
       new TwigFilter('translation', [self::class, 'entityTranslation']),
+      new TwigFilter('cache_metadata', [self::class, 'CacheMetadata']),
     ];
 
     if (Settings::get('twig_tweak_enable_php_filter')) {
@@ -154,12 +155,24 @@ class TwigTweakExtension extends AbstractExtension {
   /**
    * Returns the render array to represent an entity.
    */
-  public static function drupalEntity(string $entity_type, string $id, string $view_mode = 'full', ?string $langcode = NULL, bool $check_access = TRUE): array {
-    $entity = \Drupal::entityTypeManager()->getStorage($entity_type)->load($id);
+  public static function drupalEntity(string $entity_type, string $selector, string $view_mode = 'full', ?string $langcode = NULL, bool $check_access = TRUE): array {
+
+    $storage = \Drupal::entityTypeManager()->getStorage($entity_type);
+
+    if (Uuid::isValid($selector)) {
+      $entities = $storage->loadByProperties(['uuid' => $selector]);
+      $entity = reset($entities);
+    }
+    // Fall back to entity ID.
+    else {
+      $entity = $storage->load($selector);
+    }
+
     if ($entity) {
       return \Drupal::service('twig_tweak.entity_view_builder')
         ->build($entity, $view_mode, $langcode, $check_access);
     }
+
     return [];
   }
 
@@ -421,12 +434,21 @@ class TwigTweakExtension extends AbstractExtension {
    *
    * @param string $text
    *   An HTML string containing replaceable tokens.
+   * @param array $data
+   *   (optional) An array of keyed objects. For simple replacement scenarios
+   *   'node', 'user', and others are common keys, with an accompanying node or
+   *   user object being the value. Some token types, like 'site', do not
+   *   require any explicit information from $data and can be replaced even if
+   *   it is empty.
+   * @param array $options
+   *   (optional) A keyed array of settings and flags to control the token
+   *   replacement process.
    *
    * @return string
    *   The entered HTML text with tokens replaced.
    */
-  public static function tokenReplaceFilter(string $text): string {
-    return \Drupal::token()->replace($text);
+  public static function tokenReplaceFilter(string $text, array $data = [], array $options = []): string {
+    return \Drupal::token()->replace($text, $data, $options);
   }
 
   /**
@@ -616,6 +638,19 @@ class TwigTweakExtension extends AbstractExtension {
    */
   public static function entityTranslation(EntityInterface $entity, string $langcode = NULL): EntityInterface {
     return \Drupal::service('entity.repository')->getTranslationFromContext($entity, $langcode);
+  }
+
+  /**
+   * Extracts cache metadata from object or render array.
+   *
+   * @param \Drupal\Core\Cache\CacheableDependencyInterface|array $input
+   *   The cacheable object or render array.
+   *
+   * @return array
+   *   A render array with extracted cache metadata.
+   */
+  public static function cacheMetadata($input): array {
+    return \Drupal::service('twig_tweak.cache_metadata_extractor')->extractCacheMetadata($input);
   }
 
   /**

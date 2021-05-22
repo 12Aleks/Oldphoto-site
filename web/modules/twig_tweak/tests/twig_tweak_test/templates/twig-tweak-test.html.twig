@@ -33,6 +33,8 @@
   <div class="tt-region">{{ drupal_region('sidebar_first') }}</div>
   <div class="tt-entity-default">{{ drupal_entity('node', 1) }}</div>
   <div class="tt-entity-teaser">{{ drupal_entity('node', 1, 'teaser') }}</div>
+  <div class="tt-entity-uuid">{{ drupal_entity('node', 'ad1b902a-344f-41d1-8c61-a69f0366dbfa') }}</div>
+  <div class="tt-entity-uuid-missing">{{ drupal_entity('node', 'zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz') }}</div>
   <div class="tt-entity-add-form">{{ drupal_entity_form('node', values={type: 'page'}) }}</div>
   <div class="tt-entity-edit-form">{{ drupal_entity_form('node', 1) }}</div>
   <div class="tt-field">{{ drupal_field('body', 'node', 1) }}</div>

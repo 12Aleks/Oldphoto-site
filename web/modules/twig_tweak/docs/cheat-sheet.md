@@ -289,7 +289,6 @@ For string arguments it works similar to core `file_url()` Twig function.
 
 In order to generate absolute URL set "relative" parameter to `false`.
 ```twig
-{{ 'public://sea.jpg'|file_url(relative=false) }}
 {{ 'public://sea.jpg'|file_url(false) }}
 ```
 
@@ -316,6 +315,14 @@ It is also possible to extract file URL directly from an entity.
 That is typically needed when printing data from referenced entities.
 ```twig
 {{ media|translation.title|view }}
+```
+
+## Cache metadata
+When using raw values from entities or render arrays it is essential to
+ensure that cache metadata are bubbled up.
+```twig
+<img src="{{ node.field_media|file_url }}" alt="Logo"/>
+{{ content.field_media|cache_metadata }}
 ```
 
 ## PHP

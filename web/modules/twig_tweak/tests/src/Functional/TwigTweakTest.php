@@ -30,7 +30,7 @@ final class TwigTweakTest extends BrowserTestBase {
   /**
    * {@inheritdoc}
    */
-  public static $modules = [
+  protected static $modules = [
     'twig_tweak',
     'twig_tweak_test',
     'views',
@@ -73,6 +73,7 @@ final class TwigTweakTest extends BrowserTestBase {
 
     $node_values = [
       'title' => 'Alpha',
+      'uuid' => 'ad1b902a-344f-41d1-8c61-a69f0366dbfa',
       'field_image' => [
         'target_id' => $image_file->id(),
         'alt' => 'Alt text',
@@ -159,6 +160,16 @@ final class TwigTweakTest extends BrowserTestBase {
     $xpath = '//div[@class = "tt-entity-teaser"]';
     $xpath .= '/article[contains(@class, "node") and contains(@class, "node--view-mode-teaser")]';
     $xpath .= '/h2/a/span[text() = "Alpha"]';
+    $this->assertXpath($xpath);
+
+    // -- Entity by UUID.
+    $xpath = '//div[@class = "tt-entity-uuid"]';
+    $xpath .= '/article[contains(@class, "node")]';
+    $xpath .= '/h2/a/span[text() = "Alpha"]';
+    $this->assertXpath($xpath);
+
+    // -- Entity by UUID (missing).
+    $xpath = '//div[@class = "tt-entity-uuid-missing" and . = ""]';
     $this->assertXpath($xpath);
 
     // -- Entity add form (unprivileged user).

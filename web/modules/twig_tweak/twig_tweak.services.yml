@@ -39,3 +39,6 @@ services:
   twig_tweak.uri_extractor:
     class: Drupal\twig_tweak\UriExtractor
     arguments: ['@entity_type.manager']
+
+  twig_tweak.cache_metadata_extractor:
+    class: Drupal\twig_tweak\CacheMetadataExtractor
