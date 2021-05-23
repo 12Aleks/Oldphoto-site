@@ -44,6 +44,7 @@
 #}
 <!-- HEADER-->
 {% include '@bootstrap_oldphoto/includes/header.html.twig' %}
+{% set view_other_coins = drupal_view('other_articles_coins_', 'block_1') %}
 <!-- HEADER-->
 
 <!-- MAIN -->
@@ -71,10 +72,23 @@
         {{ page.content }}
       </div>
       <!-- MAIN CONTENT -->
-
+    </div>
+  </div>
+  <section class="other">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <h3 class="title">{{ "Other publikations"|t }}</h3>
+          {{ view_other_coins }}
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <div class="row">
       <!-- CONTENT AFTER -->
       {% if page.content_after %}
-        <aside  id="content-after">
+        <aside id="content-after">
           {{ page.content_after }}
         </aside>
       {% endif %}
@@ -82,7 +96,6 @@
 
     </div>
   </div>
-
 
 </main>
 <!-- MAIN -->

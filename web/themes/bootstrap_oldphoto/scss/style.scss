@@ -20,10 +20,11 @@
 //block
 @import './block/_block_bannerhomepage.scss';
 @import './block/_modal.scss';
+@import "./block/other_publications.scss";
 
 
 html, body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', serif;
 }
 
 body {
@@ -35,9 +36,13 @@ h1, h2, h3, h4, h5, h6, a, p {
   word-break: break-word;
 }
 
-h3 {
+h3, h3.title {
   letter-spacing: 0.13rem;
   font-weight: 300;
+}
+h3.title{
+  text-transform: uppercase;
+  text-align: center;
 }
 
 p {

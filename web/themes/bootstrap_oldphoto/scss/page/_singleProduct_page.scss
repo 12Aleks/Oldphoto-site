@@ -1,6 +1,9 @@
 .page-node-type-coins {
   .node--type-coins {
-    min-height: calc(100vh - 293px);
+    margin-bottom: 20px;
+    @media(max-width: 991.98px) {
+      margin-bottom: 20px;
+    }
 
     .entry-content {
       margin-bottom: 20px;
@@ -65,38 +68,17 @@
     .active > div:first-child { display:block; }
 
     /*xs*/
-    @media (max-width: 767px) {
+    @media (max-width: 767.98px) {
       .carousel-inner .active.left { left: -50%; }
       .carousel-inner .active.right { left: 50%; }
       .carousel-inner .next        { left:  50%; }
       .carousel-inner .prev		     { left: -50%; }
       .carousel-col                { width: 50%; }
       .active > div:first-child + div { display:block; }
-    }
-
-    /*sm*/
-    @media (min-width: 768px) and (max-width: 991px) {
-      .carousel-inner .active.left { left: -50%; }
-      .carousel-inner .active.right { left: 50%; }
-      .carousel-inner .next        { left:  50%; }
-      .carousel-inner .prev		     { left: -50%; }
-      .carousel-col                { width: 50%; }
-      .active > div:first-child + div { display:block; }
-    }
-
-    /*md*/
-    @media (min-width: 992px) and (max-width: 1199px) {
-      .carousel-inner .active.left { left: -50%; }
-      .carousel-inner .active.right { left: 50%; }
-      .carousel-inner .next        { left:  50%; }
-      .carousel-inner .prev		     { left: -50%; }
-      .carousel-col                { width: 50%; }
-      .active > div:first-child + div { display:block; }
-      .active > div:first-child + div + div { display:block; }
     }
 
     /*lg*/
-    @media (min-width: 1200px) {
+    @media (min-width: 768px) {
       .carousel-inner .active.left { left: -50%; }
       .carousel-inner .active.right { left: 50%; }
       .carousel-inner .next        { left:  50%; }
@@ -108,6 +90,5 @@
     }
 
   }
-
 }
 
