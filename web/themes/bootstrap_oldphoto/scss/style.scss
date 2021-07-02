@@ -98,6 +98,7 @@ div.breadcrumbs{
 
 a.button--black{
   color: $wight;
+  border-radius: 0;
   background: $gray-dark;
   &:hover {
     color: $gray-dark;

@@ -1028,6 +1028,7 @@ div.breadcrumbs {
 
 a.button--black {
   color: #fff;
+  border-radius: 0;
   background: #303030; }
   a.button--black:hover {
     color: #303030;
