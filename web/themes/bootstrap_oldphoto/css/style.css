@@ -29,7 +29,7 @@ header#header-brand {
     border-bottom: 1px solid #847e79;
     border-right: 1px solid #847e79;
     border-left: 1px solid #847e79;
-    background: #86817c !important;
+    background: #7e7163 !important;
     background-size: cover;
     width: 100%;
     height: 55px;
@@ -346,11 +346,14 @@ header#header-brand {
   header#header-brand .navigation.menu--main .nav-item.nav-link.is-active:before {
     content: none !important; }
 
-.page-node-type-list footer#page-footer {
-  margin-top: 35px; }
+.page-node-type-list footer#page-footer, .page-node-type-coins footer#page-footer {
+  margin-top: 80px; }
+  @media (max-width: 1199.98px) {
+    .page-node-type-list footer#page-footer, .page-node-type-coins footer#page-footer {
+      margin-top: 40px; } }
 
 footer#page-footer-sub, footer#page-footer {
-  background-color: #161616; }
+  background-color: #7e7163; }
 
 footer#page-footer {
   position: relative;
@@ -615,7 +618,7 @@ footer#page-footer-sub p {
   .page-node-type-list nav.navigation ul.pagination li.active a.page-link {
     font-weight: 700; }
 .page-node-type-list .sidebar-wrapper {
-  height: 551px; }
+  min-height: 550px; }
   .page-node-type-list .sidebar-wrapper label.custom-control-label {
     letter-spacing: 0.13rem;
     font-weight: 500;
@@ -727,6 +730,39 @@ footer#page-footer-sub p {
       display: block; }
     .page-node-type-coins #carousel .active > div:first-child + div + div + div {
       display: block; } }
+.page-node-type-coins #content-after {
+  width: 100%;
+  padding-top: 93px; }
+  @media (max-width: 1199.98px) {
+    .page-node-type-coins #content-after {
+      padding-top: 40px; } }
+  .page-node-type-coins #content-after .region.region-content-after {
+    width: 100%; }
+    .page-node-type-coins #content-after .region.region-content-after #block-linktocontactform {
+      margin: 0 auto;
+      display: block;
+      max-width: 600px; }
+      .page-node-type-coins #content-after .region.region-content-after #block-linktocontactform .field--name-body {
+        text-align: center; }
+        .page-node-type-coins #content-after .region.region-content-after #block-linktocontactform .field--name-body p {
+          font-size: 2rem;
+          line-height: 3.5rem;
+          text-transform: uppercase;
+          padding-bottom: 20px; }
+      .page-node-type-coins #content-after .region.region-content-after #block-linktocontactform .field--type-link {
+        text-align: center;
+        padding: 10px 15px;
+        text-transform: uppercase;
+        background-color: #7e7163;
+        display: block;
+        margin: 0 auto;
+        max-width: 230px; }
+        .page-node-type-coins #content-after .region.region-content-after #block-linktocontactform .field--type-link a {
+          color: #fff;
+          letter-spacing: 1.5px; }
+      @media (max-width: 991.98px) {
+        .page-node-type-coins #content-after .region.region-content-after #block-linktocontactform {
+          margin: 0 auto 40px; } }
 
 .home-page-banner {
   position: relative;
@@ -804,16 +840,15 @@ footer#page-footer-sub p {
 
 .other {
   background-color: #7e7163;
-  padding-bottom: 40px;
-  margin-top: 40px;
-  margin-bottom: 40px; }
-  @media (max-width: 991.98px) {
+  padding: 80px 0;
+  margin-top: 80px; }
+  @media (max-width: 1199.98px) {
     .other {
-      margin-top: 20px;
-      margin-bottom: 20px; } }
+      padding: 40px 0;
+      margin-top: 40px; } }
   .other h3.title {
     color: #fff;
-    padding: 40px 0; }
+    padding: 0 0 40px; }
   .other .slick, .other .slick-track {
     position: relative; }
   .other .slick-slide > div {
@@ -936,7 +971,8 @@ body {
 
 h1, h2, h3, h4, h5, h6, a, p {
   font-family: 'Lato', serif !important;
-  word-break: break-word; }
+  word-break: break-word;
+  text-decoration: none; }
 
 h3, h3.title {
   letter-spacing: 0.13rem;

@@ -16,11 +16,11 @@
 @import './page/_home_page.scss';
 @import "./page/_contact_page.scss";
 @import "./page/_list_page.scss";
-@import "./page/singleProduct_page.scss";
+@import "./page/_singleProduct_page.scss";
 //block
 @import './block/_block_bannerhomepage.scss';
 @import './block/_modal.scss';
-@import "./block/other_publications.scss";
+@import "./block/_other_publications.scss";
 
 
 html, body {
@@ -34,6 +34,7 @@ body {
 h1, h2, h3, h4, h5, h6, a, p {
   font-family: 'Lato', serif !important;
   word-break: break-word;
+  text-decoration: none;
 }
 
 h3, h3.title {
@@ -49,6 +50,7 @@ p {
   font-size: 16px;
   letter-spacing: 0.1rem;
   font-weight: 300;
+
 }
 div.breadcrumbs{
   background: $wight;

@@ -1,11 +1,14 @@
-.page-node-type-list{
+.page-node-type-list, .page-node-type-coins{
   footer#page-footer{
-    margin-top: 35px;
+    margin-top: 80px;
+    @media(max-width: 1199.98px){
+      margin-top: 40px;
+    }
   }
 }
 
 footer#page-footer-sub, footer#page-footer{
-  background-color: $background_block;
+  background-color: $background;
 }
 
 footer#page-footer {
