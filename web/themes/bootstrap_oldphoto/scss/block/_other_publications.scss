@@ -1,0 +1,130 @@
+.other{
+  background-color: $background;
+  padding: 80px 0;
+  margin-top: 80px;
+  @media(max-width: 1199.98px){
+    padding: 40px 0;
+    margin-top: 40px;
+  }
+  h3.title{
+    color: $wight;
+    padding: 0 0 40px;
+  }
+  .slick, .slick-track{
+    position: relative;
+  }
+  .slick-slide > div{
+    height: 100%;
+  }
+  button.slick-arrow:focus{
+    outline: none !important;
+  }
+  .slick-slide{
+    background-color: $wight;
+    padding-bottom: 15px;
+    margin: 0 15px 15px;
+    .slide__description{
+      @include flex();
+      @include flex-direction(column);
+      @include align-items(center);
+      @include justify-content(center);
+      .views-field-title a, .views-field-body,  .views-field-view-node{
+        color: $black;
+      }
+      .views-field-title, .views-field-body,  .views-field-view-node{
+        padding: 10px 15px;
+        text-align: left;
+        text-decoration: none;
+      }
+      .views-field-field-images{
+        margin: 0;
+      }
+      .views-field-title a{
+        @include flex();
+        @include align-items(center);
+        font: 700 18px/20px Lato;
+        word-break: break-word;
+        height: 60px;
+
+      }
+      .views-field-body{
+        font: 400 16px/24px Lato;
+        color: $black;
+        height: 110px;
+        word-break: break-word;
+      }
+      .views-field-view-node{
+        span{
+          padding: 7px 12px 12px 12px;
+          background-color: $background;
+        }
+        a{
+          color: $wight;
+          font: 400 16px/16px Lato;
+        }
+      }
+    }
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: 40%;
+    background: transparent;
+    height: 80px;
+    color: transparent;
+    border: none;
+  }
+
+  .slick-next {
+    right: 0;
+  }
+
+  .slick-prev:before {
+    content: "\1F850";
+    font-family: FontAwesome;
+    padding: 4px 10px;
+    color: $wight;
+    position: absolute;
+    font-size: 30px;
+    top: 0;
+    left: -60px;
+    border: 2px solid $wight;
+    border-radius: 50%;
+
+  }
+
+  .slick-next:before {
+    content: "\1F852";
+    font-family: FontAwesome;
+    padding: 4px 10px;
+    color: $wight;
+    position: absolute;
+    font-size: 30px;
+    top: 0;
+    right: -60px;
+    border: 2px solid $wight;
+    border-radius: 50%;
+  }
+
+  @media(max-width: 991.98px){
+    padding-top: 40px;
+    padding-bottom: 40px;
+    h3.title{
+      padding-bottom: 40px;
+      margin-bottom: 0;
+    }
+    .slick-prev:before {
+      font-size: 24px;
+      left: -45px;
+    }
+    .slick-next:before{
+      font-size: 24px;
+      right: -45px;
+    }
+  }
+  @media(max-width: 991.98px){
+    .slick-prev:before, .slick-next:before{
+      display: none;
+    }
+  }
+}

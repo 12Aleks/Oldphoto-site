@@ -70,23 +70,24 @@
  *   in different view modes.
  */
 #}
-{%
-  set classes = [
+{% set classes = [
   'node',
   'node--type-' ~ node.bundle|clean_class,
   node.isPromoted() ? 'node--promoted',
   node.isSticky() ? 'node--sticky',
   not node.isPublished() ? 'node--unpublished',
   view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
-]
-%}
+] %}
 {% set view_coins = drupal_view('coins_filter_list', 'page_1') %}
+{% set view_medals = drupal_view('medals_filter_list', 'page_1') %}
 
 {{ attach_library('classy/node') }}
 <article{{ attributes.addClass(classes) }}>
   <div{{ content_attributes.addClass('node__content') }}>
-    {% if view_coins %}
-        {{ view_coins }}
+    {% if view_coins and node.id == 4 %}
+      {{ view_coins }}
+    {% elseif view_medals and node.id == 11 %}
+      {{ view_medals }}
     {% endif %}
   </div>
 </article>

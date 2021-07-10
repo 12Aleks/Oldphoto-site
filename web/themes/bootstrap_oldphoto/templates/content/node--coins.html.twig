@@ -78,7 +78,10 @@
   not node.isPublished() ? 'node--unpublished',
   view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 ] %}
+
 {{ attach_library('classy/node') }}
+
+
 <article{{ attributes.addClass(classes) }}>
 
   {{ title_prefix }}
@@ -101,12 +104,12 @@
             <span class="post-description-title">{{ 'Production date'|t }}: </span>
             <p>{{ content.field_minting_date|field_value }} year</p>
             {% if content.field_category[0] is not empty %}
-            <span class="post-description-title">{{ 'Country'|t }}: </span>
-            <p>{{ content.field_category|field_value|render|striptags }}</p>
+              <span class="post-description-title">{{ 'Country'|t }}: </span>
+              <p>{{ content.field_category|field_value|render|striptags }}</p>
             {% endif %}
             {% if content.field_metal[0] is not empty %}
-            <span class="post-description-title">{{ 'Metal'|t }}: </span>
-            <p>{{ content.field_metal|field_value|render|striptags }}</p>
+              <span class="post-description-title">{{ 'Metal'|t }}: </span>
+              <p>{{ content.field_metal|field_value|render|striptags }}</p>
             {% endif %}
           </div>
         {% endif %}
@@ -124,7 +127,7 @@
         {% endif %}
 
       </div>
-    </div>
+
   </div>
 
 </article>
