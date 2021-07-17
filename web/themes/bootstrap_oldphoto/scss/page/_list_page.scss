@@ -1,4 +1,15 @@
 .page-node-type-list {
+  .node-4 {
+    .block-views-exposed-filter-blockmedals-filter-list-page-1 {
+      display: none;
+    }
+  }
+
+  .node-11 {
+     .block-views-exposed-filter-blockcoins-filter-list-page-1{
+       display: none;
+     }
+  }
 
   .card {
     max-width: 255px;
@@ -6,6 +17,7 @@
 
     .card-img-top.img-wrapper {
       max-height: 252px;
+
       .card-img-background {
         @include background-size(contain);
         background-repeat: no-repeat;
@@ -96,42 +108,48 @@
 
   .sidebar-wrapper {
     min-height: 550px;
-    label.custom-control-label{
+
+    label.custom-control-label {
       letter-spacing: 0.13rem;
       font-weight: 500;
       font-size: 12px;
       text-transform: uppercase;
     }
+
     .sidebar {
       position: relative;
       z-index: 1000;
       padding: 15px;
       border-right: 1px solid #eee;
 
-      h2{
+      h2 {
         font-size: 16px;
         text-transform: uppercase;
         border-bottom: 1px solid #b3b3b3;
         padding-bottom: 5px;
       }
 
-      input#edit-submit, input#edit-submit-coins-filter-list--2{
+      input#edit-submit, input#edit-submit-coins-filter-list--2, #edit-submit-medals-filter-list--2 {
         width: 100%;
       }
-      .form-search{
+
+      .form-search {
         max-width: 190px;
         width: 100%;
       }
-      .block-views-exposed-filter-blockcoins-filter-list-page-1{
-        h2{
+
+      .block-views-exposed-filter-blockcoins-filter-list-page-1,  .block-views-exposed-filter-blockmedals-filter-list-page-1 {
+        h2 {
           margin: 40px 0 0;
         }
-        div.form-item{
+
+        div.form-item {
           margin-bottom: 0;
           width: 100%;
         }
-        select#edit-tid--2{
-          input#edit-submit-coins-filter-list--2{
+
+        select#edit-tid--2 {
+          input#edit-submit-coins-filter-list--2 {
             margin-top: 0;
           }
         }

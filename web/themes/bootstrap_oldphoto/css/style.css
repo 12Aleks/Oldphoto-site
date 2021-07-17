@@ -557,6 +557,10 @@ footer#page-footer-sub p {
   .contact-page .node__content.form-wrapper input.button.button--primary {
     width: 310px; }
 
+.page-node-type-list .node-4 .block-views-exposed-filter-blockmedals-filter-list-page-1 {
+  display: none; }
+.page-node-type-list .node-11 .block-views-exposed-filter-blockcoins-filter-list-page-1 {
+  display: none; }
 .page-node-type-list .card {
   max-width: 255px;
   margin-bottom: 15px; }
@@ -634,17 +638,17 @@ footer#page-footer-sub p {
       text-transform: uppercase;
       border-bottom: 1px solid #b3b3b3;
       padding-bottom: 5px; }
-    .page-node-type-list .sidebar-wrapper .sidebar input#edit-submit, .page-node-type-list .sidebar-wrapper .sidebar input#edit-submit-coins-filter-list--2 {
+    .page-node-type-list .sidebar-wrapper .sidebar input#edit-submit, .page-node-type-list .sidebar-wrapper .sidebar input#edit-submit-coins-filter-list--2, .page-node-type-list .sidebar-wrapper .sidebar #edit-submit-medals-filter-list--2 {
       width: 100%; }
     .page-node-type-list .sidebar-wrapper .sidebar .form-search {
       max-width: 190px;
       width: 100%; }
-    .page-node-type-list .sidebar-wrapper .sidebar .block-views-exposed-filter-blockcoins-filter-list-page-1 h2 {
+    .page-node-type-list .sidebar-wrapper .sidebar .block-views-exposed-filter-blockcoins-filter-list-page-1 h2, .page-node-type-list .sidebar-wrapper .sidebar .block-views-exposed-filter-blockmedals-filter-list-page-1 h2 {
       margin: 40px 0 0; }
-    .page-node-type-list .sidebar-wrapper .sidebar .block-views-exposed-filter-blockcoins-filter-list-page-1 div.form-item {
+    .page-node-type-list .sidebar-wrapper .sidebar .block-views-exposed-filter-blockcoins-filter-list-page-1 div.form-item, .page-node-type-list .sidebar-wrapper .sidebar .block-views-exposed-filter-blockmedals-filter-list-page-1 div.form-item {
       margin-bottom: 0;
       width: 100%; }
-    .page-node-type-list .sidebar-wrapper .sidebar .block-views-exposed-filter-blockcoins-filter-list-page-1 select#edit-tid--2 input#edit-submit-coins-filter-list--2 {
+    .page-node-type-list .sidebar-wrapper .sidebar .block-views-exposed-filter-blockcoins-filter-list-page-1 select#edit-tid--2 input#edit-submit-coins-filter-list--2, .page-node-type-list .sidebar-wrapper .sidebar .block-views-exposed-filter-blockmedals-filter-list-page-1 select#edit-tid--2 input#edit-submit-coins-filter-list--2 {
       margin-top: 0; }
 @media (min-width: 250px) {
   .page-node-type-list .ml-sm-auto, .page-node-type-list .mx-sm-auto {
