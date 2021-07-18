@@ -654,106 +654,106 @@ footer#page-footer-sub p {
   .page-node-type-list .ml-sm-auto, .page-node-type-list .mx-sm-auto {
     margin-left: auto !important; } }
 
-.page-node-type-coins .node--type-coins {
+.page-node-type-coins .node--type-coins, .page-node-type-coins .node--type-orders-medals, .page-node-type-orders-medals .node--type-coins, .page-node-type-orders-medals .node--type-orders-medals {
   margin-bottom: 20px; }
   @media (max-width: 991.98px) {
-    .page-node-type-coins .node--type-coins {
+    .page-node-type-coins .node--type-coins, .page-node-type-coins .node--type-orders-medals, .page-node-type-orders-medals .node--type-coins, .page-node-type-orders-medals .node--type-orders-medals {
       margin-bottom: 20px; } }
-  .page-node-type-coins .node--type-coins .entry-content {
+  .page-node-type-coins .node--type-coins .entry-content, .page-node-type-coins .node--type-orders-medals .entry-content, .page-node-type-orders-medals .node--type-coins .entry-content, .page-node-type-orders-medals .node--type-orders-medals .entry-content {
     margin-bottom: 20px; }
-    .page-node-type-coins .node--type-coins .entry-content span.post-description-title {
+    .page-node-type-coins .node--type-coins .entry-content span.post-description-title, .page-node-type-coins .node--type-orders-medals .entry-content span.post-description-title, .page-node-type-orders-medals .node--type-coins .entry-content span.post-description-title, .page-node-type-orders-medals .node--type-orders-medals .entry-content span.post-description-title {
       float: left;
       margin-right: 5px;
       font: 700 17px/15px Roboto Condensed, sans-serif !important; }
       @media (max-width: 991.98px) {
-        .page-node-type-coins .node--type-coins .entry-content span.post-description-title {
+        .page-node-type-coins .node--type-coins .entry-content span.post-description-title, .page-node-type-coins .node--type-orders-medals .entry-content span.post-description-title, .page-node-type-orders-medals .node--type-coins .entry-content span.post-description-title, .page-node-type-orders-medals .node--type-orders-medals .entry-content span.post-description-title {
           font: 700 16px/14px Roboto Condensed, sans-serif !important; } }
-    .page-node-type-coins .node--type-coins .entry-content p {
+    .page-node-type-coins .node--type-coins .entry-content p, .page-node-type-coins .node--type-orders-medals .entry-content p, .page-node-type-orders-medals .node--type-coins .entry-content p, .page-node-type-orders-medals .node--type-orders-medals .entry-content p {
       font: 400 16px/18px Roboto, sans-serif !important;
       margin-bottom: .8rem; }
       @media (max-width: 991.98px) {
-        .page-node-type-coins .node--type-coins .entry-content p {
+        .page-node-type-coins .node--type-coins .entry-content p, .page-node-type-coins .node--type-orders-medals .entry-content p, .page-node-type-orders-medals .node--type-coins .entry-content p, .page-node-type-orders-medals .node--type-orders-medals .entry-content p {
           font: 400 15px/16px Roboto, sans-serif !important;
           margin-bottom: .1rem; } }
-.page-node-type-coins .article.node img[class*="image-style"] {
+.page-node-type-coins .article.node img[class*="image-style"], .page-node-type-orders-medals .article.node img[class*="image-style"] {
   float: none; }
-.page-node-type-coins .bootstrap-basic-image-gallery {
+.page-node-type-coins .bootstrap-basic-image-gallery, .page-node-type-orders-medals .bootstrap-basic-image-gallery {
   padding: 10px 15px;
   border: 1px solid #f0f0f0;
   border-radius: 2px; }
-  .page-node-type-coins .bootstrap-basic-image-gallery .main-image img {
+  .page-node-type-coins .bootstrap-basic-image-gallery .main-image img, .page-node-type-orders-medals .bootstrap-basic-image-gallery .main-image img {
     float: none;
     display: block;
     margin: 0 auto; }
-  .page-node-type-coins .bootstrap-basic-image-gallery .thumbnails .thumb img[class*="image-style"] {
+  .page-node-type-coins .bootstrap-basic-image-gallery .thumbnails .thumb img[class*="image-style"], .page-node-type-orders-medals .bootstrap-basic-image-gallery .thumbnails .thumb img[class*="image-style"] {
     float: none;
     display: block;
     margin: 10px auto; }
-.page-node-type-coins #carousel {
+.page-node-type-coins #carousel, .page-node-type-orders-medals #carousel {
   /*xs*/
   /*lg*/ }
-  .page-node-type-coins #carousel .carousel-control-next, .page-node-type-coins #carousel .carousel-control-prev {
+  .page-node-type-coins #carousel .carousel-control-next, .page-node-type-coins #carousel .carousel-control-prev, .page-node-type-orders-medals #carousel .carousel-control-next, .page-node-type-orders-medals #carousel .carousel-control-prev {
     color: black;
     font-size: 29px !important; }
-  .page-node-type-coins #carousel .carousel-col {
+  .page-node-type-coins #carousel .carousel-col, .page-node-type-orders-medals #carousel .carousel-col {
     position: relative;
     min-height: 1px;
     padding: 5px;
     float: left; }
-  .page-node-type-coins #carousel .active > div {
+  .page-node-type-coins #carousel .active > div, .page-node-type-orders-medals #carousel .active > div {
     display: none; }
-  .page-node-type-coins #carousel .active > div:first-child {
+  .page-node-type-coins #carousel .active > div:first-child, .page-node-type-orders-medals #carousel .active > div:first-child {
     display: block; }
   @media (max-width: 767.98px) {
-    .page-node-type-coins #carousel .carousel-inner .active.left {
+    .page-node-type-coins #carousel .carousel-inner .active.left, .page-node-type-orders-medals #carousel .carousel-inner .active.left {
       left: -50%; }
-    .page-node-type-coins #carousel .carousel-inner .active.right {
+    .page-node-type-coins #carousel .carousel-inner .active.right, .page-node-type-orders-medals #carousel .carousel-inner .active.right {
       left: 50%; }
-    .page-node-type-coins #carousel .carousel-inner .next {
+    .page-node-type-coins #carousel .carousel-inner .next, .page-node-type-orders-medals #carousel .carousel-inner .next {
       left: 50%; }
-    .page-node-type-coins #carousel .carousel-inner .prev {
+    .page-node-type-coins #carousel .carousel-inner .prev, .page-node-type-orders-medals #carousel .carousel-inner .prev {
       left: -50%; }
-    .page-node-type-coins #carousel .carousel-col {
+    .page-node-type-coins #carousel .carousel-col, .page-node-type-orders-medals #carousel .carousel-col {
       width: 50%; }
-    .page-node-type-coins #carousel .active > div:first-child + div {
+    .page-node-type-coins #carousel .active > div:first-child + div, .page-node-type-orders-medals #carousel .active > div:first-child + div {
       display: block; } }
   @media (min-width: 768px) {
-    .page-node-type-coins #carousel .carousel-inner .active.left {
+    .page-node-type-coins #carousel .carousel-inner .active.left, .page-node-type-orders-medals #carousel .carousel-inner .active.left {
       left: -50%; }
-    .page-node-type-coins #carousel .carousel-inner .active.right {
+    .page-node-type-coins #carousel .carousel-inner .active.right, .page-node-type-orders-medals #carousel .carousel-inner .active.right {
       left: 50%; }
-    .page-node-type-coins #carousel .carousel-inner .next {
+    .page-node-type-coins #carousel .carousel-inner .next, .page-node-type-orders-medals #carousel .carousel-inner .next {
       left: 50%; }
-    .page-node-type-coins #carousel .carousel-inner .prev {
+    .page-node-type-coins #carousel .carousel-inner .prev, .page-node-type-orders-medals #carousel .carousel-inner .prev {
       left: -50%; }
-    .page-node-type-coins #carousel .carousel-col {
+    .page-node-type-coins #carousel .carousel-col, .page-node-type-orders-medals #carousel .carousel-col {
       width: 50%; }
-    .page-node-type-coins #carousel .active > div:first-child + div {
+    .page-node-type-coins #carousel .active > div:first-child + div, .page-node-type-orders-medals #carousel .active > div:first-child + div {
       display: block; }
-    .page-node-type-coins #carousel .active > div:first-child + div + div {
+    .page-node-type-coins #carousel .active > div:first-child + div + div, .page-node-type-orders-medals #carousel .active > div:first-child + div + div {
       display: block; }
-    .page-node-type-coins #carousel .active > div:first-child + div + div + div {
+    .page-node-type-coins #carousel .active > div:first-child + div + div + div, .page-node-type-orders-medals #carousel .active > div:first-child + div + div + div {
       display: block; } }
-.page-node-type-coins #content-after {
+.page-node-type-coins #content-after, .page-node-type-orders-medals #content-after {
   width: 100%;
   padding-top: 93px; }
   @media (max-width: 1199.98px) {
-    .page-node-type-coins #content-after {
+    .page-node-type-coins #content-after, .page-node-type-orders-medals #content-after {
       padding-top: 40px; } }
-  .page-node-type-coins #content-after .region.region-content-after {
+  .page-node-type-coins #content-after .region.region-content-after, .page-node-type-orders-medals #content-after .region.region-content-after {
     width: 100%; }
-    .page-node-type-coins #content-after .region.region-content-after #block-linktocontactform {
+    .page-node-type-coins #content-after .region.region-content-after #block-linktocontactform, .page-node-type-orders-medals #content-after .region.region-content-after #block-linktocontactform {
       margin: 0 auto;
       display: block;
       max-width: 600px; }
-      .page-node-type-coins #content-after .region.region-content-after #block-linktocontactform .field--name-body {
+      .page-node-type-coins #content-after .region.region-content-after #block-linktocontactform .field--name-body, .page-node-type-orders-medals #content-after .region.region-content-after #block-linktocontactform .field--name-body {
         text-align: center; }
-        .page-node-type-coins #content-after .region.region-content-after #block-linktocontactform .field--name-body p {
+        .page-node-type-coins #content-after .region.region-content-after #block-linktocontactform .field--name-body p, .page-node-type-orders-medals #content-after .region.region-content-after #block-linktocontactform .field--name-body p {
           font-size: 2rem;
           line-height: 3.5rem;
           text-transform: uppercase;
           padding-bottom: 20px; }
-      .page-node-type-coins #content-after .region.region-content-after #block-linktocontactform .field--type-link {
+      .page-node-type-coins #content-after .region.region-content-after #block-linktocontactform .field--type-link, .page-node-type-orders-medals #content-after .region.region-content-after #block-linktocontactform .field--type-link {
         text-align: center;
         padding: 10px 15px;
         text-transform: uppercase;
@@ -761,11 +761,11 @@ footer#page-footer-sub p {
         display: block;
         margin: 0 auto;
         max-width: 230px; }
-        .page-node-type-coins #content-after .region.region-content-after #block-linktocontactform .field--type-link a {
+        .page-node-type-coins #content-after .region.region-content-after #block-linktocontactform .field--type-link a, .page-node-type-orders-medals #content-after .region.region-content-after #block-linktocontactform .field--type-link a {
           color: #fff;
           letter-spacing: 1.5px; }
       @media (max-width: 991.98px) {
-        .page-node-type-coins #content-after .region.region-content-after #block-linktocontactform {
+        .page-node-type-coins #content-after .region.region-content-after #block-linktocontactform, .page-node-type-orders-medals #content-after .region.region-content-after #block-linktocontactform {
           margin: 0 auto 40px; } }
 
 .home-page-banner {
