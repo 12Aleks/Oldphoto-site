@@ -5,9 +5,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/page/_singleProduct_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/page/_singleProduct_page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/content/node--main-page.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/content/node--main-page.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/view/views-view-unformatted--orders-medals-filter-list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/view/views-view-unformatted--medals-filter-list.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/includes/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/includes/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/page/_list_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/scss/page/_list_page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/page/page--orders-medals.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/page/page--orders-medals.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/view/views-view-unformatted--coins-filter-list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/view/views-view-unformatted--coins-filter-list.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/view/views-view-unformatted--medals-filter-list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/web/themes/bootstrap_oldphoto/templates/view/views-view-unformatted--medals-filter-list.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +112,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/themes/bfd" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
@@ -225,7 +227,8 @@
       <workItem from="1626189404332" duration="1032000" />
       <workItem from="1626516021932" duration="9918000" />
       <workItem from="1626579270053" duration="2339000" />
-      <workItem from="1626620418818" duration="76000" />
+      <workItem from="1626620418818" duration="755000" />
+      <workItem from="1627701743871" duration="2735000" />
     </task>
     <servers />
   </component>

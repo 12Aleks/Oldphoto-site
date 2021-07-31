@@ -53,6 +53,8 @@
           margin-bottom: 26px;
           font: 100 15px/18px Lato;
           letter-spacing: 1.5px;
+          text-decoration: none;
+          color: #6c757d;
           @media (min-width: 768px) and (max-width: 1199.98px) {
             margin-bottom: 24px;
             font: 100 14px/18px Lato;
@@ -67,7 +69,31 @@
       }
     }
   }
+  .view-medals-filter-list{
+    .card {
+      max-width: 255px;
+      margin-bottom: 15px;
 
+      .card-img-top.img-wrapper {
+        max-height: 265px;
+        .card-img-background {
+          max-width: 236px;
+          height: 250px;
+          @media (min-width: 768px) and (max-width: 1199.98px) {
+            height: 288px;
+            width: auto;
+          }
+        }
+      }
+
+      .card-body {
+        padding-top: 12px;
+        .card-text-wrapper {
+          height: 65px;
+        }
+      }
+    }
+  }
   .pagination_box {
     margin-bottom: 50px;
 

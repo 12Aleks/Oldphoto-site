@@ -346,10 +346,10 @@ header#header-brand {
   header#header-brand .navigation.menu--main .nav-item.nav-link.is-active:before {
     content: none !important; }
 
-.page-node-type-list footer#page-footer, .page-node-type-coins footer#page-footer {
+.page-node-type-list footer#page-footer, .page-node-type-coins footer#page-footer, .page-node-type-orders-medals footer#page-footer {
   margin-top: 80px; }
   @media (max-width: 1199.98px) {
-    .page-node-type-list footer#page-footer, .page-node-type-coins footer#page-footer {
+    .page-node-type-list footer#page-footer, .page-node-type-coins footer#page-footer, .page-node-type-orders-medals footer#page-footer {
       margin-top: 40px; } }
 
 footer#page-footer-sub, footer#page-footer {
@@ -594,7 +594,9 @@ footer#page-footer-sub p {
     .page-node-type-list .card .card-body .card-text-wrapper .card-text {
       margin-bottom: 26px;
       font: 100 15px/18px Lato;
-      letter-spacing: 1.5px; }
+      letter-spacing: 1.5px;
+      text-decoration: none;
+      color: #6c757d; }
       @media (min-width: 768px) and (max-width: 1199.98px) {
         .page-node-type-list .card .card-body .card-text-wrapper .card-text {
           margin-bottom: 24px;
@@ -603,6 +605,22 @@ footer#page-footer-sub p {
   .page-node-type-list .card .card-body a.button--black {
     max-width: 250px;
     margin-top: 40px; }
+.page-node-type-list .view-medals-filter-list .card {
+  max-width: 255px;
+  margin-bottom: 15px; }
+  .page-node-type-list .view-medals-filter-list .card .card-img-top.img-wrapper {
+    max-height: 265px; }
+    .page-node-type-list .view-medals-filter-list .card .card-img-top.img-wrapper .card-img-background {
+      max-width: 236px;
+      height: 250px; }
+      @media (min-width: 768px) and (max-width: 1199.98px) {
+        .page-node-type-list .view-medals-filter-list .card .card-img-top.img-wrapper .card-img-background {
+          height: 288px;
+          width: auto; } }
+  .page-node-type-list .view-medals-filter-list .card .card-body {
+    padding-top: 12px; }
+    .page-node-type-list .view-medals-filter-list .card .card-body .card-text-wrapper {
+      height: 65px; }
 .page-node-type-list .pagination_box {
   margin-bottom: 50px; }
   .page-node-type-list .pagination_box div#pagination {
