@@ -3,14 +3,13 @@
 namespace Drupal\Tests\twig_tweak\Kernel;
 
 use Drupal\Core\Cache\CacheableMetadata;
-use Drupal\KernelTests\KernelTestBase;
 
 /**
  * A test for Cache Metadata Extractor service.
  *
  * @group twig_tweak
  */
-final class CacheMetadataExtractorTest extends KernelTestBase {
+final class CacheMetadataExtractorTest extends AbstractTestCase {
 
   /**
    * {@inheritdoc}
@@ -88,7 +87,7 @@ final class CacheMetadataExtractorTest extends KernelTestBase {
         'max-age' => 10,
       ],
     ];
-    self::assertSame($expected_build, $build);
+    self::assertRenderArray($expected_build, $build);
 
     // -- Wrong type.
     self::expectErrorMessage('The input should be either instance of Drupal\Core\Cache\CacheableDependencyInterface or array. stdClass was given.');

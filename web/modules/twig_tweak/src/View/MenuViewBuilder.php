@@ -76,6 +76,8 @@ class MenuViewBuilder {
       ];
     }
 
+    $build['#cache']['contexts'][] = 'route.menu_active_trails:' . $menu_name;
+
     return $build;
   }
 

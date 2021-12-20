@@ -3,7 +3,6 @@
 namespace Drupal\Tests\twig_tweak\Kernel;
 
 use Drupal\Core\Cache\Cache;
-use Drupal\KernelTests\KernelTestBase;
 use Drupal\Tests\user\Traits\UserCreationTrait;
 use Drupal\node\Entity\Node;
 use Drupal\node\Entity\NodeType;
@@ -13,7 +12,7 @@ use Drupal\node\Entity\NodeType;
  *
  * @group twig_tweak
  */
-final class EntityFormViewBuilderTest extends KernelTestBase {
+final class EntityFormViewBuilderTest extends AbstractTestCase {
 
   use UserCreationTrait;
 
@@ -47,7 +46,7 @@ final class EntityFormViewBuilderTest extends KernelTestBase {
   /**
    * Test callback.
    */
-  public function testEntityViewBuilder(): void {
+  public function testEntityFormViewBuilder(): void {
 
     $view_builder = $this->container->get('twig_tweak.entity_form_view_builder');
 
@@ -82,7 +81,7 @@ final class EntityFormViewBuilderTest extends KernelTestBase {
       ],
       'max-age' => 50,
     ];
-    self::assertSame($expected_cache, $build['#cache']);
+    self::assertCache($expected_cache, $build['#cache']);
     self::assertStringContainsString('<form class="node-article-form node-form" ', $this->renderPlain($build));
 
     // -- Private node with access check.
@@ -100,7 +99,7 @@ final class EntityFormViewBuilderTest extends KernelTestBase {
       ],
       'max-age' => 50,
     ];
-    self::assertSame($expected_cache, $build['#cache']);
+    self::assertCache($expected_cache, $build['#cache']);
     self::assertSame('', $this->renderPlain($build));
 
     // -- Private node without access check.
@@ -117,7 +116,7 @@ final class EntityFormViewBuilderTest extends KernelTestBase {
       ],
       'max-age' => Cache::PERMANENT,
     ];
-    self::assertSame($expected_cache, $build['#cache']);
+    self::assertCache($expected_cache, $build['#cache']);
     self::assertStringContainsString('<form class="node-article-form node-form" ', $this->renderPlain($build));
   }
 

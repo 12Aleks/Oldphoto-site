@@ -192,7 +192,7 @@ class TwigTweakExtension extends AbstractExtension {
   /**
    * Returns the render array for a single entity field.
    */
-  public static function drupalField(string $field_name, string $entity_type, string $id, string $view_mode = 'full', string $langcode = NULL, bool $check_access = TRUE): array {
+  public static function drupalField(string $field_name, string $entity_type, string $id, $view_mode = 'full', string $langcode = NULL, bool $check_access = TRUE): array {
     $entity = \Drupal::entityTypeManager()->getStorage($entity_type)->load($id);
     if ($entity) {
       return \Drupal::service('twig_tweak.field_view_builder')
@@ -312,12 +312,14 @@ class TwigTweakExtension extends AbstractExtension {
 
   /**
    * Returns a title for the current route.
+   *
+   * @todo Test it with NullRouteMatch
    */
   public static function drupalTitle(): array {
-    $title = \Drupal::service('title_resolver')->getTitle(
-      \Drupal::request(),
-      \Drupal::routeMatch()->getRouteObject()
-    );
+    $title = NULL;
+    if ($route = \Drupal::routeMatch()->getRouteObject()) {
+      $title = \Drupal::service('title_resolver')->getTitle(\Drupal::request(), $route);
+    }
     $build['#markup'] = render($title);
     $build['#cache']['contexts'] = ['url'];
     return $build;

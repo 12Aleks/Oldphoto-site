@@ -2,15 +2,15 @@
 
 namespace Drupal\admin_toolbar_tools\Plugin\Derivative;
 
-use Drupal\Component\Plugin\Derivative\DeriverBase;
-use Drupal\Core\Config\ConfigFactoryInterface;
-use Drupal\Core\Entity\EntityTypeManagerInterface;
-use Drupal\Core\Extension\ModuleHandlerInterface;
-use Drupal\Core\Extension\ThemeHandlerInterface;
-use Drupal\Core\Plugin\Discovery\ContainerDeriverInterface;
-use Drupal\Core\Routing\RouteProviderInterface;
-use Drupal\Core\StringTranslation\StringTranslationTrait;
 use Drupal\system\Entity\Menu;
+use Drupal\Core\Config\ConfigFactoryInterface;
+use Drupal\Core\Routing\RouteProviderInterface;
+use Drupal\Core\Extension\ThemeHandlerInterface;
+use Drupal\Core\Extension\ModuleHandlerInterface;
+use Drupal\Core\Entity\EntityTypeManagerInterface;
+use Drupal\Component\Plugin\Derivative\DeriverBase;
+use Drupal\Core\StringTranslation\StringTranslationTrait;
+use Drupal\Core\Plugin\Discovery\ContainerDeriverInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
@@ -228,7 +228,7 @@ class ExtraLinks extends DeriverBase implements ContainerDeriverInterface {
       'title' => $this->t('Add role'),
       'route_name' => 'user.role_add',
       'parent' => $base_plugin_definition['id'] . ':entity.user_role.collection',
-      'weight' => -5,
+      'weight' => -50,
     ] + $base_plugin_definition;
     // Adds sub-links to Account settings link.
     if ($this->moduleHandler->moduleExists('field_ui')) {
@@ -256,6 +256,7 @@ class ExtraLinks extends DeriverBase implements ContainerDeriverInterface {
       $links['entity.user_role.edit_form.' . $role->id()] = [
         'route_name' => 'entity.user_role.edit_form',
         'parent' => $base_plugin_definition['id'] . ':entity.user_role.collection',
+        'weight' => $role->getWeight(),
         'route_parameters' => ['user_role' => $role->id()],
         'class' => 'Drupal\admin_toolbar_tools\Plugin\Menu\MenuLinkEntity',
         'metadata' => [
@@ -375,8 +376,8 @@ class ExtraLinks extends DeriverBase implements ContainerDeriverInterface {
           'route_parameters' => ['menu' => $menu_id],
         ] + $base_plugin_definition;
         // Un-deletable menus.
-        $menus = ['admin', 'devel', 'footer', 'main', 'tools', 'account'];
-        if (!in_array($menu_id, $menus)) {
+        $un_deletable_menus = ['admin', 'devel', 'footer', 'main', 'tools', 'account'];
+        if (!in_array($menu_id, $un_deletable_menus)) {
           $links['entity.menu.delete_form.' . $menu_id] = [
             'title' => $this->t('Delete'),
             'route_name' => 'entity.menu.delete_form',
@@ -584,6 +585,13 @@ class ExtraLinks extends DeriverBase implements ContainerDeriverInterface {
         'route_name' => 'entity.media.collection',
         'parent' => 'system.admin_content',
       ] + $base_plugin_definition;
+      if ($this->moduleHandler->moduleExists('media_library') && $this->routeExists('view.media_library.page')) {
+        $links['media_library'] = [
+          'title' => $this->t('Media library'),
+          'route_name' => 'view.media_library.page',
+          'parent' => $base_plugin_definition['id'] . ':media_page',
+        ] + $base_plugin_definition;
+      }
       $links['add_media'] = [
         'title' => $this->t('Add media'),
         'route_name' => 'entity.media.add_page',

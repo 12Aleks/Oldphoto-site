@@ -87,12 +87,12 @@ class BlockUiTest extends BrowserTestBase {
   }
 
   /**
-   * Test block demo page exists and functions correctly.
+   * Tests block demo page exists and functions correctly.
    */
   public function testBlockDemoUiPage() {
     $this->drupalPlaceBlock('help_block', ['region' => 'help']);
     $this->drupalGet('admin/structure/block');
-    $this->clickLink(t('Demonstrate block regions (@theme)', ['@theme' => 'Classy']));
+    $this->clickLink('Demonstrate block regions (Classy)');
     $this->assertSession()->elementExists('xpath', '//div[contains(@class, "region-highlighted")]/div[contains(@class, "block-region") and contains(text(), "Highlighted")]');
 
     // Ensure that other themes can use the block demo page.
@@ -107,7 +107,7 @@ class BlockUiTest extends BrowserTestBase {
   }
 
   /**
-   * Test block admin page exists and functions correctly.
+   * Tests block admin page exists and functions correctly.
    */
   public function testBlockAdminUiPage() {
     // Visit the blocks admin ui.
@@ -130,7 +130,8 @@ class BlockUiTest extends BrowserTestBase {
       // Change the test block's weight.
       $edit['blocks[' . $values['settings']['id'] . '][weight]'] = $values['test_weight'];
     }
-    $this->drupalPostForm('admin/structure/block', $edit, 'Save blocks');
+    $this->drupalGet('admin/structure/block');
+    $this->submitForm($edit, 'Save blocks');
     foreach ($this->blockValues as $values) {
       // Check if the region and weight settings changes have persisted.
       $this->assertTrue($this->assertSession()->optionExists('edit-blocks-' . $values['settings']['id'] . '-region', 'header')->isSelected());
@@ -215,8 +216,8 @@ class BlockUiTest extends BrowserTestBase {
   public function testContextAwareBlocks() {
     $expected_text = '<div id="test_context_aware--username">' . \Drupal::currentUser()->getAccountName() . '</div>';
     $this->drupalGet('');
-    $this->assertNoText('Test context-aware block');
-    $this->assertNoRaw($expected_text);
+    $this->assertSession()->pageTextNotContains('Test context-aware block');
+    $this->assertSession()->responseNotContains($expected_text);
 
     $block_url = 'admin/structure/block/add/test_context_aware/classy';
     $arguments = [
@@ -236,12 +237,13 @@ class BlockUiTest extends BrowserTestBase {
       'region' => 'content',
       'settings[context_mapping][user]' => '@block_test.multiple_static_context:userB',
     ];
-    $this->drupalPostForm($block_url, $edit, 'Save block');
+    $this->drupalGet($block_url);
+    $this->submitForm($edit, 'Save block');
 
     $this->drupalGet('');
-    $this->assertText('Test context-aware block');
-    $this->assertText('User context found.');
-    $this->assertRaw($expected_text);
+    $this->assertSession()->pageTextContains('Test context-aware block');
+    $this->assertSession()->pageTextContains('User context found.');
+    $this->assertSession()->responseContains($expected_text);
 
     // Test context mapping form element is not visible if there are no valid
     // context options for the block (the test_context_aware_no_valid_context_options
@@ -257,12 +259,12 @@ class BlockUiTest extends BrowserTestBase {
     ];
     $this->submitForm($edit, 'Save block');
     $this->drupalGet('');
-    $this->assertText('No context mapping selected.');
-    $this->assertNoText('User context found.');
+    $this->assertSession()->pageTextContains('No context mapping selected.');
+    $this->assertSession()->pageTextNotContains('User context found.');
 
     // Tests that conditions with missing context are not displayed.
     $this->drupalGet('admin/structure/block/manage/testcontextawareblock');
-    $this->assertNoRaw('No existing type');
+    $this->assertSession()->responseNotContains('No existing type');
     $this->assertSession()->elementNotExists('xpath', '//*[@name="visibility[condition_test_no_existing_type][negate]"]');
   }
 
@@ -276,14 +278,16 @@ class BlockUiTest extends BrowserTestBase {
     $this->drupalGet($url);
     $this->assertSession()->fieldValueEquals('id', 'displaymessage');
     $edit = ['region' => 'content'];
-    $this->drupalPostForm($url, $edit, 'Save block');
-    $this->assertText('The block configuration has been saved.');
+    $this->drupalGet($url);
+    $this->submitForm($edit, 'Save block');
+    $this->assertSession()->pageTextContains('The block configuration has been saved.');
 
     // Now, check to make sure the form starts by autoincrementing correctly.
     $this->drupalGet($url);
     $this->assertSession()->fieldValueEquals('id', 'displaymessage_2');
-    $this->drupalPostForm($url, $edit, 'Save block');
-    $this->assertText('The block configuration has been saved.');
+    $this->drupalGet($url);
+    $this->submitForm($edit, 'Save block');
+    $this->assertSession()->pageTextContains('The block configuration has been saved.');
 
     // And verify that it continues working beyond just the first two.
     $this->drupalGet($url);
@@ -319,7 +323,8 @@ class BlockUiTest extends BrowserTestBase {
     $block['region'] = 'content';
 
     // After adding a block, it will indicate which block was just added.
-    $this->drupalPostForm('admin/structure/block/add/system_powered_by_block', $block, 'Save block');
+    $this->drupalGet('admin/structure/block/add/system_powered_by_block');
+    $this->submitForm($block, 'Save block');
     $this->assertSession()->addressEquals('admin/structure/block/list/classy?block-placement=' . Html::getClass($block['id']));
 
     // Resaving the block page will remove the block placement indicator.
@@ -349,7 +354,11 @@ class BlockUiTest extends BrowserTestBase {
    * Tests if validation errors are passed plugin form to the parent form.
    */
   public function testBlockValidateErrors() {
-    $this->drupalPostForm('admin/structure/block/add/test_settings_validation/classy', ['region' => 'content', 'settings[digits]' => 'abc'], 'Save block');
+    $this->drupalGet('admin/structure/block/add/test_settings_validation/classy');
+    $this->submitForm([
+      'region' => 'content',
+      'settings[digits]' => 'abc',
+    ], 'Save block');
 
     $arguments = [':message' => 'Only digits are allowed'];
     $pattern = '//div[contains(@class,"messages messages--error")]/div[contains(text()[2],:message)]';

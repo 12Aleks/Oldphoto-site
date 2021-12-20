@@ -3,7 +3,6 @@
 namespace Drupal\Tests\twig_tweak\Kernel;
 
 use Drupal\Core\Cache\Cache;
-use Drupal\KernelTests\KernelTestBase;
 use Drupal\Tests\user\Traits\UserCreationTrait;
 use Drupal\node\Entity\Node;
 use Drupal\node\Entity\NodeType;
@@ -13,7 +12,7 @@ use Drupal\node\Entity\NodeType;
  *
  * @group twig_tweak
  */
-final class FieldViewBuilderTest extends KernelTestBase {
+final class FieldViewBuilderTest extends AbstractTestCase {
 
   use UserCreationTrait;
 
@@ -74,7 +73,7 @@ final class FieldViewBuilderTest extends KernelTestBase {
       ],
       'max-age' => 50,
     ];
-    self::assertSame($expected_cache, $build['#cache']);
+    self::assertCache($expected_cache, $build['#cache']);
 
     self::assertSame('<span>Public node</span>', $this->renderPlain($build));
 
@@ -93,7 +92,7 @@ final class FieldViewBuilderTest extends KernelTestBase {
       ],
       'max-age' => 50,
     ];
-    self::assertSame($expected_cache, $build['#cache']);
+    self::assertCache($expected_cache, $build['#cache']);
     $expected_html = '<span><a href="/node/1" hreflang="en">Public node</a></span>';
     self::assertSame($expected_html, $this->renderPlain($build));
 
@@ -112,7 +111,7 @@ final class FieldViewBuilderTest extends KernelTestBase {
       ],
       'max-age' => 50,
     ];
-    self::assertSame($expected_cache, $build['#cache']);
+    self::assertCache($expected_cache, $build['#cache']);
     self::assertSame('', $this->renderPlain($build));
 
     // -- Private node without access check.

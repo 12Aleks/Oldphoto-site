@@ -135,8 +135,9 @@ class BlockViewBuilder {
       if ($block_plugin instanceof TitleBlockPluginInterface) {
         $build['content']['#cache']['contexts'][] = 'url';
       }
-
-      if ($wrapper && !Element::isEmpty($build['content'])) {
+      // Some blocks returns NULL instead of array when empty.
+      // @see https://www.drupal.org/project/drupal/issues/3212354
+      if ($wrapper && is_array($build['content']) && !Element::isEmpty($build['content'])) {
         $build += [
           '#theme' => 'block',
           '#id' => $configuration['id'] ?? NULL,

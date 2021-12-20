@@ -18,7 +18,7 @@ class ImageFieldValidateTest extends ImageFieldTestBase {
   protected $defaultTheme = 'stark';
 
   /**
-   * Test the validation message is displayed only once for ajax uploads.
+   * Tests the validation message is displayed only once for ajax uploads.
    */
   public function testAJAXValidationMessage() {
     $field_name = strtolower($this->randomMachineName());
@@ -56,7 +56,7 @@ class ImageFieldValidateTest extends ImageFieldTestBase {
       'entity_type' => 'node',
       'bundle' => 'article',
       'field_name' => 'field_dummy_select',
-      'label' => t('Dummy select'),
+      'label' => 'Dummy select',
     ])->save();
 
     \Drupal::entityTypeManager()
