@@ -3,7 +3,6 @@
 namespace Drupal\Tests\twig_tweak\Kernel;
 
 use Drupal\Core\Cache\Cache;
-use Drupal\KernelTests\KernelTestBase;
 use Drupal\node\Entity\Node;
 use Drupal\node\Entity\NodeType;
 use Drupal\Tests\user\Traits\UserCreationTrait;
@@ -13,7 +12,7 @@ use Drupal\Tests\user\Traits\UserCreationTrait;
  *
  * @group twig_tweak
  */
-final class EntityViewBuilderTest extends KernelTestBase {
+final class EntityViewBuilderTest extends AbstractTestCase {
 
   use UserCreationTrait;
 
@@ -84,7 +83,7 @@ final class EntityViewBuilderTest extends KernelTestBase {
       ],
       'bin' => 'render',
     ];
-    self::assertSame($expected_cache, $build['#cache']);
+    self::assertCache($expected_cache, $build['#cache']);
 
     $expected_html = <<< 'HTML'
       <article role="article">
@@ -117,7 +116,7 @@ final class EntityViewBuilderTest extends KernelTestBase {
       ],
       'bin' => 'render',
     ];
-    self::assertSame($expected_cache, $build['#cache']);
+    self::assertCache($expected_cache, $build['#cache']);
 
     $expected_html = <<< 'HTML'
       <article role="article">
@@ -150,7 +149,7 @@ final class EntityViewBuilderTest extends KernelTestBase {
       ],
       'max-age' => 50,
     ];
-    self::assertSame($expected_cache, $build['#cache']);
+    self::assertCache($expected_cache, $build['#cache']);
 
     self::assertSame('', $this->renderPlain($build));
 
@@ -172,7 +171,7 @@ final class EntityViewBuilderTest extends KernelTestBase {
       ],
       'bin' => 'render',
     ];
-    self::assertSame($expected_cache, $build['#cache']);
+    self::assertCache($expected_cache, $build['#cache']);
 
     $expected_html = <<< 'HTML'
       <article role="article">

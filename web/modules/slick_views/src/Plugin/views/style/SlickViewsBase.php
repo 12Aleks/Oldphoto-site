@@ -81,6 +81,7 @@ abstract class SlickViewsBase extends BlazyStylePluginBase {
       'grid_form',
       'id',
       'nav',
+      'style',
       'thumb_positions',
       'vanilla',
     ];
@@ -148,6 +149,11 @@ abstract class SlickViewsBase extends BlazyStylePluginBase {
     $settings['caption'] = array_filter($settings['caption']);
     $settings['nav'] = !$settings['vanilla'] && $settings['optionset_thumbnail'] && isset($this->view->result[1]);
     $settings['overridables'] = empty($settings['override']) ? array_filter($settings['overridables']) : $settings['overridables'];
+
+    // BC for non-required Display style. Blazy 2.5+ requires explicit style.
+    if (!empty($settings['grid']) && !empty($settings['visible_items']) && empty($settings['style'])) {
+      $settings['style'] = 'grid';
+    }
 
     return $settings;
   }

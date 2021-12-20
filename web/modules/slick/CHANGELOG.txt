@@ -1,4 +1,35 @@
 
+Slick 8.x-2.0-dev, 2021-09-29
+-----------------------------
+-Issue #3239708 by gausarts: Drop theme_slick_grid for theme_item_list via
+ Blazy Grid.
+
+Slick 8.x-2.0-dev, 2021-09-26
+-----------------------------
+- Issue #3239256 by gausarts: Provides Slick filter to have shortcodes for
+  WYSIWYG editors.
+
+Slick 8.x-2.0-dev, 2021-09-18
+-----------------------------
+- Issue #3236487 by gausarts: Update to Flexbox and Native Grid
+
+Slick 8.x-2.0-dev, 2021-06-23
+-----------------------------
+- Issue #3220308 by gausarts: [Accessible Slick] Thumbnail navigation no longer
+  navigate slides.
+- Issue #3220286 by gausarts: [Accessible Slick] Provide a check for breaking
+  changes with Accessible Slick.
+- Issue #3196529 by wrd, HeikkiY, galactus86: Support Accessible Slick.
+
+Slick 8.x-2.0-dev, 2021-06-10
+-----------------------------
+- Fixed for Colorbox duplicate clones, ported from Splide.
+
+Slick 8.x-2.0-dev, 2021-05-03
+-----------------------------
+- Issue #3211873 by gausarts: Provide options to load Slick anywhere, except
+  admin pages.
+
 Slick 8.x-2.0-dev, 2021-04-12
 -----------------------------
 - Issue #3123787 by thomas.frobieter, gausarts: Fix ROWS setting default value

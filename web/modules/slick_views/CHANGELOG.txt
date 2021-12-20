@@ -1,4 +1,10 @@
 
+Slick Views 8.x-2.0-dev, 2021-10-08
+-----------------------------------
+- Updated to Blazy 2.5 to support Native Grid, etc.
+- Exposed the hidden Display style option.
+- Fixed for default grid BC.
+
 Slick Views 8.x-2.0-dev, 2021-04-17
 -----------------------------------
 - Issue #3135699 by amritendu1980, bscwebmaster, kaipipek, kb_klash,

@@ -1,4 +1,42 @@
 
+Blazy 8.x-2.0-dev, 2021-10-06
+-----------------------------
+- Issue #3210635 by grathbone, jastraat, Bwolf: Lazyloaded image-to-iframes /
+  videos are not accessible.
+
+Blazy 8.x-2.0-dev, 2021-09-27
+-----------------------------
+- Issue #3239351 by gausarts: Provides shortcodes for Blazy Filter.
+
+Blazy 8.x-2.0-dev, 2021-09-26
+-----------------------------
+- Made Blazy filter extensible to support sub-modules builtin shortcodes.
+
+Blazy 8.x-2.0-dev, 2021-09-23
+-----------------------------
+- Issue #3238403 by gausarts, VasiliyRepin: Blazy does not output link to
+  content at image for Commerce Product.
+
+Blazy 8.x-2.0-dev, 2021-09-22
+-----------------------------
+- Fixed for Native Grid given various known contents.
+- Added a separate Composer section.
+- Fixed for Eslint with ES5.
+
+Blazy 8.x-2.0-dev, 2021-09-17
+-----------------------------
+- Issue #3233555 by gausarts: Adopt modern grids: Flexbox and or Native Grid.
+
+Blazy 8.x-2.0-dev, 2021-09-15
+-----------------------------
+- Issue #3225859 by Fernly, gausarts, alexrayu, nbanderson: Blazy 2.3+ breaks in
+  use with stage_file_proxy and or CDN.
+
+Blazy 8.x-2.0-dev, 2021-07-06
+-----------------------------
+- Issue #3220632 by gausarts, bgreco: WSOD when the responsive_image module is
+  not enabled
+
 Blazy 8.x-2.0-dev, 2021-06-17
 -----------------------------
 - Issue #3213258 by gausarts: Remove obsolete "Native browser lazy load.

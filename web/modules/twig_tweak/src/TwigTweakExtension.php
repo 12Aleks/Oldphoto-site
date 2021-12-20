@@ -312,12 +312,14 @@ class TwigTweakExtension extends AbstractExtension {
 
   /**
    * Returns a title for the current route.
+   *
+   * @todo Test it with NullRouteMatch
    */
   public static function drupalTitle(): array {
-    $title = \Drupal::service('title_resolver')->getTitle(
-      \Drupal::request(),
-      \Drupal::routeMatch()->getRouteObject()
-    );
+    $title = NULL;
+    if ($route = \Drupal::routeMatch()->getRouteObject()) {
+      $title = \Drupal::service('title_resolver')->getTitle(\Drupal::request(), $route);
+    }
     $build['#markup'] = render($title);
     $build['#cache']['contexts'] = ['url'];
     return $build;

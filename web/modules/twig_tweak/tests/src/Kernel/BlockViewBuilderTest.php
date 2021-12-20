@@ -54,8 +54,8 @@ final class BlockViewBuilderTest extends KernelTestBase {
       '#configuration' => [
         'id' => 'twig_tweak_test_foo',
         'label' => '',
-        'provider' => 'twig_tweak_test',
         'label_display' => 'visible',
+        'provider' => 'twig_tweak_test',
         'content' => 'Foo',
       ],
       '#plugin_id' => 'twig_tweak_test_foo',
@@ -73,6 +73,19 @@ final class BlockViewBuilderTest extends KernelTestBase {
         ],
       ],
     ];
+
+    // @todo Remove this once we drop support for Drupal 9.2.
+    // @see https://www.drupal.org/node/3230199
+    if (\version_compare(\Drupal::VERSION, '9.3.0-dev', '<')) {
+      $expected_build['#configuration'] = [
+        'id' => 'twig_tweak_test_foo',
+        'label' => '',
+        'provider' => 'twig_tweak_test',
+        'label_display' => 'visible',
+        'content' => 'Foo',
+      ];
+    }
+
     self::assertSame($expected_build, $build);
     self::assertSame('<div id="foo">Foo</div>', $this->renderPlain($build));
 

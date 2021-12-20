@@ -5,7 +5,6 @@ namespace Drupal\Tests\twig_tweak\Kernel;
 use Drupal\block\Entity\Block;
 use Drupal\Component\Utility\Html;
 use Drupal\Core\Cache\Cache;
-use Drupal\KernelTests\KernelTestBase;
 use Drupal\Tests\user\Traits\UserCreationTrait;
 
 /**
@@ -13,7 +12,7 @@ use Drupal\Tests\user\Traits\UserCreationTrait;
  *
  * @group twig_tweak
  */
-final class RegionViewBuilderTest extends KernelTestBase {
+final class RegionViewBuilderTest extends AbstractTestCase {
 
   use UserCreationTrait;
 
@@ -117,7 +116,8 @@ final class RegionViewBuilderTest extends KernelTestBase {
         'max-age' => 123,
       ],
     ];
-    self::assertSame($expected_build, $build);
+
+    self::assertRenderArray($expected_build, $build);
 
     $expected_html = <<< 'HTML'
       <div>
@@ -137,7 +137,8 @@ final class RegionViewBuilderTest extends KernelTestBase {
       ->save();
 
     $build = $view_builder->build('sidebar_first');
-    self::assertSame($expected_build, $build);
+    self::assertRenderArray($expected_build, $build);
+
     Html::resetSeenIds();
     $actual_html = $renderer->renderPlain($expected_build);
     self::assertSame(self::normalizeHtml($expected_html), self::normalizeHtml($actual_html));

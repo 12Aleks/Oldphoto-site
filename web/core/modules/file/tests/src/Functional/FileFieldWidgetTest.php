@@ -55,7 +55,9 @@ class FileFieldWidgetTest extends FileFieldTestBase {
    *   A file object, or FALSE on error.
    */
   protected function createTemporaryFile($data, UserInterface $user = NULL) {
-    $file = file_save_data($data, NULL, NULL);
+    /** @var \Drupal\file\FileRepositoryInterface $file_repository */
+    $file_repository = \Drupal::service('file.repository');
+    $file = $file_repository->writeData($data, "public://");
 
     if ($file) {
       if ($user) {
@@ -377,13 +379,12 @@ class FileFieldWidgetTest extends FileFieldTestBase {
     $edit[$name] = \Drupal::service('file_system')->realpath($test_file_image->getFileUri());
     $this->submitForm($edit, 'Upload');
 
-    $error_message = t('Only files with the following extensions are allowed: %files-allowed.', ['%files-allowed' => 'txt']);
-    $this->assertRaw($error_message);
+    $this->assertSession()->pageTextContains("Only files with the following extensions are allowed: txt.");
 
     // Upload file with correct extension, check that error message is removed.
     $edit[$name] = \Drupal::service('file_system')->realpath($test_file_text->getFileUri());
     $this->submitForm($edit, 'Upload');
-    $this->assertNoRaw($error_message);
+    $this->assertSession()->pageTextNotContains("Only files with the following extensions are allowed: txt.");
   }
 
   /**
