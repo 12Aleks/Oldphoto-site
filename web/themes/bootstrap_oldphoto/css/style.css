@@ -510,52 +510,56 @@ footer#page-footer-sub p {
     .page-node-type-main-page .projects .container-photo, .page-node-type-main-page .projects .container-coins, .page-node-type-main-page .projects .container-medals {
       background-size: cover; } }
 
-.contact-page .node__content.form-wrapper {
-  min-height: calc(100vh - 293px);
-  margin: 20px auto;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -moz-box-direction: normal;
-  -moz-box-orient: vertical;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center; }
-  .contact-page .node__content.form-wrapper .field--name-field-descriptions {
-    max-width: 550px;
-    margin: 0 auto;
-    display: block; }
-    .contact-page .node__content.form-wrapper .field--name-field-descriptions p {
-      text-align: center; }
-  .contact-page .node__content.form-wrapper .btn-primary {
-    margin-left: 15%; }
-  .contact-page .node__content.form-wrapper p:not(:last-of-type) {
-    letter-spacing: 0.07rem; }
-    @media (max-width: 768.98px) {
-      .contact-page .node__content.form-wrapper p:not(:last-of-type) {
-        margin-bottom: .7em; } }
-    .contact-page .node__content.form-wrapper p:not(:last-of-type) label {
-      text-transform: uppercase;
-      font: 100 1rem 'IBM Plex Serif', serif !important;
-      color: #303030;
-      width: 70%; }
-  .contact-page .node__content.form-wrapper .form-control {
-    border: 1px solid #303030; }
-    .contact-page .node__content.form-wrapper .form-control:focus {
-      box-shadow: none !important; }
-  .contact-page .node__content.form-wrapper .btn-primary {
-    margin: 0; }
-  .contact-page .node__content.form-wrapper input.button.button--primary {
-    width: 310px; }
+.page-node-type-contact-page .bg-light {
+  background-color: transparent !important;
+  background: transparent !important; }
+  .page-node-type-contact-page .bg-light .breadcrumb-item a {
+    color: #fff; }
+.page-node-type-contact-page input.btn.btn-vinous {
+  padding: 1rem; }
+.page-node-type-contact-page article > .row {
+  min-height: calc(100vh - 293px); }
+  .page-node-type-contact-page article > .row p {
+    color: #fff;
+    margin: 20px 0;
+    font: 400 1.125rem/1.125rem 'Lato', serif !important; }
+  .page-node-type-contact-page article > .row .node__content.form-wrapper {
+    margin: 20px 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-box-direction: normal;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center; }
+    .page-node-type-contact-page article > .row .node__content.form-wrapper p:not(:last-of-type) {
+      letter-spacing: 0.07rem; }
+      @media (max-width: 768.98px) {
+        .page-node-type-contact-page article > .row .node__content.form-wrapper p:not(:last-of-type) {
+          margin-bottom: .7em; } }
+      .page-node-type-contact-page article > .row .node__content.form-wrapper p:not(:last-of-type) label {
+        text-transform: uppercase;
+        font: 100 1rem 'IBM Plex Serif', serif !important;
+        color: #fff;
+        width: 70%; }
+    .page-node-type-contact-page article > .row .node__content.form-wrapper .form-control {
+      border: 1px solid #303030; }
+      .page-node-type-contact-page article > .row .node__content.form-wrapper .form-control:focus {
+        box-shadow: none !important; }
+    .page-node-type-contact-page article > .row .node__content.form-wrapper .btn-primary {
+      margin: 0; }
+    .page-node-type-contact-page article > .row .node__content.form-wrapper input.button.button--primary {
+      width: 310px; }
 
 .page-node-type-list .node-4 .block-views-exposed-filter-blockmedals-filter-list-page-1 {
   display: none; }
@@ -790,11 +794,7 @@ footer#page-footer-sub p {
   position: relative;
   width: 100%;
   height: 95vh;
-  padding: 15rem 0;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover; }
+  padding: 15rem 0; }
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .home-page-banner {
       height: auto; } }
@@ -830,21 +830,6 @@ footer#page-footer-sub p {
     @media (max-width: 575.98px) {
       .home-page-banner h2 {
         font: 3.1vw 'IBM Plex Serif', serif; } }
-  .home-page-banner .btn-vinous {
-    background-color: #781c2e;
-    color: white;
-    transition: background-color .5s;
-    -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-    padding: 1.25rem 2rem;
-    font: 100 0.80vw 'IBM Plex Serif', serif;
-    text-transform: uppercase;
-    letter-spacing: .15rem;
-    border: 0; }
-    .home-page-banner .btn-vinous:hover, .home-page-banner .btn-vinous:focus, .home-page-banner .btn-vinous:active {
-      background-color: #601625;
-      color: white;
-      transition: background-color .5s; }
 
 @media (min-width: 576px) {
   .page-node-type-coins .node--type-coins .modal-dialog {
@@ -1056,6 +1041,22 @@ a.button--black {
     color: #303030;
     background: #fff;
     border: 1px solid #303030; }
+
+a.btn.btn-vinous, input.btn.btn-vinous {
+  background-color: #781c2e;
+  color: white;
+  transition: background-color .5s;
+  -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  font: 100 0.80vw 'IBM Plex Serif', serif;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  border: 0; }
+  a.btn.btn-vinous:hover, a.btn.btn-vinous:focus, a.btn.btn-vinous:active, input.btn.btn-vinous:hover, input.btn.btn-vinous:focus, input.btn.btn-vinous:active {
+    background-color: #601625;
+    color: white;
+    transition: background-color .5s; }
 
 #main {
   padding-top: 55px; }

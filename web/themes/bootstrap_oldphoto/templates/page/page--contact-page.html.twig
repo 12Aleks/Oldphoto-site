@@ -47,7 +47,8 @@
 <!-- HEADER-->
 
 <!-- MAIN -->
-<main role="main " class="d-print-block" id="main">
+<main role="main " class="d-print-block" id="main"  style="background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 10%, rgba(22, 22, 22, 0.5) 75%, #161616 100%),url('{{ base_path ~ directory  }}/images/banner_opacity.jpg');  background-position: center;
+  background-repeat: no-repeat; background-attachment: scroll; background-size: cover;">
   <a id="main-content" tabindex="-1"></a>
   {# link is in html.html.twig #}
 
@@ -56,7 +57,7 @@
 
       <!-- If no sidebar_left content take full width -->
       {% set content_classes = (page.sidebar_left) ? 'col-md-8 col-lg-9' : 'col-12' %}
-      <!-- If no sidebar_left content take full width -->
+     <!-- If no sidebar_left content take full width -->
 
 
       <!-- CONTENT BEFORE -->
@@ -71,6 +72,7 @@
 
       <!-- MAIN CONTENT -->
       {{ page.content }}
+{#      {{kint( page.content)}}#}
       <!-- MAIN CONTENT -->
 
       <!-- CONTENT AFTER -->

@@ -1,49 +1,60 @@
-.contact-page {
-
- .node__content.form-wrapper {
-    min-height: calc(100vh - 293px);
-    margin: 20px auto;
-    //max-width: 900px;
-    @include flex();
-    @include flex-direction(column);
-    @include justify-content(center);
-     .field--name-field-descriptions{
-       max-width: 550px;
-       margin: 0 auto;
-       display: block;
-       p{text-align: center}
-     }
-
-    .btn-primary {
-      margin-left: 15%;
+.page-node-type-contact-page {
+  .bg-light{
+    background-color: transparent !important;
+    background: transparent !important;
+    .breadcrumb-item a{
+      color: $wight;
     }
+  }
+  input.btn.btn-vinous{
+    padding: 1rem;
+  }
+  article{
+    & > .row{
+        min-height: calc(100vh - 293px);
+       p{
+         color: $wight;
+         margin: 20px 0;
+         font:400 1.125rem/1.125rem 'Lato', serif !important;
+       }
 
-    p:not(:last-of-type) {
-      letter-spacing: 0.07rem;
-      @media (max-width: 768.98px) {
-        margin-bottom: .7em;
+
+      .node__content.form-wrapper {
+        margin: 20px 0;
+        //max-width: 900px;
+        @include flex();
+        @include flex-direction(column);
+        @include justify-content(center);
+
+
+        p:not(:last-of-type) {
+          letter-spacing: 0.07rem;
+          @media (max-width: 768.98px) {
+            margin-bottom: .7em;
+          }
+
+          label {
+            text-transform: uppercase;
+            font: 100 1rem 'IBM Plex Serif', serif !important;
+            color: $wight;
+            width: 70%;
+          }
+        }
+
+        .form-control {
+          border: 1px solid $gray-dark;
+
+          &:focus {
+            box-shadow: none !important;
+          }
+        }
+        .btn-primary{
+          margin: 0;
+        }
+        input.button.button--primary{
+          width: 310px;
+        }
       }
-
-      label {
-        text-transform: uppercase;
-        font: 100 1rem 'IBM Plex Serif', serif !important;
-        color: $gray-dark;
-        width: 70%;
-      }
-    }
-
-    .form-control {
-      border: 1px solid $gray-dark;
-
-      &:focus {
-        box-shadow: none !important;
-      }
-    }
-    .btn-primary{
-      margin: 0;
-    }
-    input.button.button--primary{
-     width: 310px;
     }
   }
 }

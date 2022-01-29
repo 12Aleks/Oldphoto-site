@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '30af8cc7a9165d97a835242dd7bad8b6871094d3',
+    'reference' => 'f34a3be1b6838c267299b61b7b7ee1f49424616a',
     'name' => 'drupal/recommended-project',
   ),
   'versions' => 
@@ -731,7 +731,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '30af8cc7a9165d97a835242dd7bad8b6871094d3',
+      'reference' => 'f34a3be1b6838c267299b61b7b7ee1f49424616a',
     ),
     'drupal/responsive_image' => 
     array (
@@ -936,6 +936,15 @@
       array (
       ),
       'reference' => '1afdd860a2566ed3c2b0b4a3de6e23434a79ec85',
+    ),
+    'kint-php/kint' => 
+    array (
+      'pretty_version' => '4.1.1',
+      'version' => '4.1.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'e64b939f9ceb9620abd982e2a66a3289fcf4e837',
     ),
     'laminas/laminas-diactoros' => 
     array (
