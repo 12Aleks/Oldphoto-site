@@ -83,6 +83,7 @@
 
   {{ title_prefix }}
   {% if label %}
+  <div class="row">
     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">
       <div class="page-title">
         <h1{{ title_attributes }}>
@@ -90,10 +91,17 @@
         </h1>
       </div>
     </div>
-  {% endif %}
-  {{ title_suffix }}
-  <div{{ content_attributes.addClass('node__content', 'col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 form-wrapper') }}>
-    {{ content }}
+    {% endif %}
+    {{ title_suffix }}
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      {{ content.field_descriptions|field_value }}
+    </div>
+    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      {#    {{ kint(content) }}#}
+      {{ content.field_image }}
+    </div>
+    <div{{ content_attributes.addClass('node__content', 'col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 form-wrapper') }}>
+      {{ content.field_contact_form }}
+    </div>
   </div>
-
 </article>

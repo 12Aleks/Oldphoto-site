@@ -30,6 +30,13 @@ function bootstrap_oldphoto_preprocess_input(&$variables) {
     $variables['attributes']['placeholder'] = t('Search');
   }
 }
+/**
+ * Base path
+ */
+function bootstrap_oldphoto_preprocess_base_path(&$variables, $hook)
+{
+    $variables['base_path'] = base_path();
+}
 
 /**
  * Implements theme_preprocess_textarea.
