@@ -84,7 +84,7 @@
   {{ title_prefix }}
   {% if label %}
   <div class="row">
-    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
       <div class="page-title">
         <h1{{ title_attributes }}>
           <a href="{{ url }}" rel="bookmark">{{ node.label }}</a>
@@ -93,14 +93,10 @@
     </div>
     {% endif %}
     {{ title_suffix }}
-    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <div class="col-12 offset-0 col-sm-12 offset-sm-0 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
       {{ content.field_descriptions|field_value }}
     </div>
-    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-      {#    {{ kint(content) }}#}
-      {{ content.field_image }}
-    </div>
-    <div{{ content_attributes.addClass('node__content', 'col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 form-wrapper') }}>
+    <div{{ content_attributes.addClass('node__content', 'col-12 offset-0 col-sm-12 offset-sm-0 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2 form-wrapper') }}>
       {{ content.field_contact_form }}
     </div>
   </div>

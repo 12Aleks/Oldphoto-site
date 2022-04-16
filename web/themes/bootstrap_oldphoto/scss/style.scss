@@ -6,9 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
-
 //global class
-
 @import '_global.scss';
 //includes
 @import './includes/_header.scss';
@@ -42,7 +40,8 @@ h3, h3.title {
   letter-spacing: 0.13rem;
   font-weight: 300;
 }
-h3.title{
+
+h3.title {
   text-transform: uppercase;
   text-align: center;
 }
@@ -53,8 +52,10 @@ p {
   font-weight: 300;
 
 }
-div.breadcrumbs{
+
+div.breadcrumbs {
   background: $wight;
+
   ol.breadcrumb.bg-light {
     padding: 5px 0 0 0;
     margin-bottom: 0;
@@ -64,9 +65,12 @@ div.breadcrumbs{
     background: $wight !important;
     letter-spacing: 0.07rem;
     text-decoration: transparent;
+    background: transparent!important;
+
     .breadcrumb-item:not(:nth-child(1)):before {
       content: ">";
     }
+
     li.breadcrumb-item a {
       text-transform: uppercase;
       font: 100 .8rem 'IBM Plex Serif', serif !important;
@@ -77,30 +81,34 @@ div.breadcrumbs{
   }
 }
 
-.btn, .btn-primary, input.button.button--primary, input#edit-submit, input#edit-submit-coins-filter-list--2{
+.btn, .btn-primary, input.button.button--primary, input#edit-submit, input#edit-submit-coins-filter-list--2 {
   text-transform: uppercase;
   font: 100 1rem 'IBM Plex Serif', serif !important;
   letter-spacing: 0.07rem;
   @include border-radius(0);
+
   &:hover, &:focus {
     background-color: $gray-dark;
     border-color: $gray-dark;
     transition: all .5s;
   }
 }
+
 .btn.btn-primary, input.button.button--primary {
   color: $gray-dark;
   background-color: $wight;
   border: 1px solid $gray-dark;
+
   &:hover {
     color: $wight;
   }
 }
 
-a.button--black{
+a.button--black {
   color: $wight;
   border-radius: 0;
   background: $gray-dark;
+
   &:hover {
     color: $gray-dark;
     background: $wight;
@@ -119,6 +127,7 @@ a.btn.btn-vinous, input.btn.btn-vinous {
   text-transform: uppercase;
   letter-spacing: .15rem;
   border: 0;
+
   &:hover, &:focus, &:active {
     background-color: #601625;
     color: white;
@@ -127,6 +136,7 @@ a.btn.btn-vinous, input.btn.btn-vinous {
 }
 
 #main {
+  min-height: calc(100vh - 93.5px);
   .region.region-content {
     width: 100%;
 
@@ -149,21 +159,25 @@ a.btn.btn-vinous, input.btn.btn-vinous {
   }
 }
 
-.path-user{
-  main.d-print-block ,main.form-login, main.form-login > .container,main.form-login > .container > .row , main.form-login > .row > .col{
-    min-height: 90vh;
+.path-user {
+  main.d-print-block, main.form-login, main.form-login > .container, main.form-login > .container > .row, main.form-login > .row > .col {
+    min-height: calc(100vh - 93.5px);
   }
-  main.d-print-block{
+
+  main.d-print-block {
     padding-top: 40px;
   }
+
   main.form-login {
     section.form-login.user.rounded {
       background: $newBackground !important;
       padding: 40px 80px !important;
-      label.custom-control-label,.description{
+
+      label.custom-control-label, .description {
         color: $wight;
       }
-      #edit-submit{
+
+      #edit-submit {
         max-width: 200px;
         width: 100%;
         display: block;
