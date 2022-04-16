@@ -1,60 +1,71 @@
 .page-node-type-contact-page {
-  .bg-light{
-    background-color: transparent !important;
-    background: transparent !important;
-    .breadcrumb-item a{
+
+  #main {
+    div.breadcrumbs ol.breadcrumb.bg-light li.breadcrumb-item   {
       color: $wight;
+      a, &:before{
+        color: $wight;
+      }
     }
-  }
-  input.btn.btn-vinous{
-    padding: 1rem;
-  }
-  article{
-    & > .row{
+    .page-title {
+      border-bottom: 1px solid $wight;
+      h1 a {
+        color: $wight;
+      }
+    }
+
+
+    input.btn.btn-vinous {
+      padding: 1rem;
+    }
+
+    article {
+      & > .row {
         min-height: calc(100vh - 293px);
-       p{
-         color: $wight;
-         margin: 20px 0;
-         font:400 1.125rem/1.125rem 'Lato', serif !important;
-       }
+
+        p {
+          color: $wight;
+          margin: 20px 0;
+          text-align: center;
+          font: 400 1.125rem/1.125rem 'Lato', serif !important;
+        }
 
 
-      .node__content.form-wrapper {
-        margin: 20px 0;
-        //max-width: 900px;
-        @include flex();
-        @include flex-direction(column);
-        @include justify-content(center);
+        .node__content.form-wrapper {
+          margin: 20px auto;
+          padding: 40px;
+          border-radius: 2px;
+          border: 1px solid #fff;
+          @include flex();
+          @include flex-direction(column);
+          @include justify-content(center);
 
-
-        p:not(:last-of-type) {
-          letter-spacing: 0.07rem;
-          @media (max-width: 768.98px) {
-            margin-bottom: .7em;
-          }
-
-          label {
+          .custom-control-label {
             text-transform: uppercase;
-            font: 100 1rem 'IBM Plex Serif', serif !important;
+            font: 100 .8rem 'IBM Plex Serif', serif !important;
+            letter-spacing: 1.5px;
             color: $wight;
             width: 70%;
           }
-        }
 
-        .form-control {
-          border: 1px solid $gray-dark;
+          .form-control {
+            border: 1px solid $gray-dark;
 
-          &:focus {
-            box-shadow: none !important;
+            &:focus {
+              box-shadow: none !important;
+            }
           }
-        }
-        .btn-primary{
-          margin: 0;
-        }
-        input.button.button--primary{
-          width: 310px;
+
+          .btn-primary {
+            margin: 0;
+          }
+
+          input.button.button--primary {
+            width: 310px;
+          }
         }
       }
     }
   }
+
 }
